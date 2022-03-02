@@ -1,0 +1,23 @@
+@use "../variables/colors" as colors;
+@import "../variables/breakpoints";
+
+.home-about {
+	.app {
+		&__wrapper {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 55px;
+			text-align: center;
+			margin: 120px 0;
+		}
+
+		&__item {
+			&__image {
+				padding: 24px;
+				background: colors.$yellow-gold;
+				border-radius: 50%;
+			}
+		}
+	}
+}

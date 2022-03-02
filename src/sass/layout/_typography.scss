@@ -54,6 +54,22 @@ a {
 	color: colors.$nav-light-gray;
 }
 
+//Home
+.home-about {
+	.app__item__title {
+		font-size: 20px;
+		line-height: 28px;
+		letter-spacing: -0.8928571343421936px;
+		color: colors.$text-dark-gray;
+	}
+
+	.app__item__text {
+		font-size: 15px;
+		line-height: 25px;
+		color: colors.$text-light-gray;
+	}
+}
+
 //Components
 .button--cta {
 	font-size: 15px;

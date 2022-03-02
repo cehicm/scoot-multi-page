@@ -79,6 +79,10 @@ body {
   display: block;
 }
 
+section {
+  padding: 0 20px;
+}
+
 .header {
   background: url("/src/images/mobile/home/mobile-hero.svg");
   background-repeat: no-repeat;
@@ -202,7 +206,33 @@ a {
   color: #e5ecf4;
 }
 
+.home-about .app__item__title {
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.8928571343px;
+  color: #495567;
+}
+.home-about .app__item__text {
+  font-size: 15px;
+  line-height: 25px;
+  color: #939caa;
+}
+
 .button--cta {
   font-size: 15px;
   line-height: 25px;
+}
+
+.home-about .app__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 55px;
+  text-align: center;
+  margin: 120px 0;
+}
+.home-about .app__item__image {
+  padding: 24px;
+  background: #fcb72b;
+  border-radius: 50%;
 }
