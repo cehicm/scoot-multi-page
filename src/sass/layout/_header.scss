@@ -1,0 +1,35 @@
+@use "../variables/colors" as colors;
+@import "../variables/breakpoints";
+
+.header {
+	background: url("/src/images/mobile/home/mobile-hero.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&--darken {
+		background-color: colors.$light-black;
+
+		background-blend-mode: darken;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 120px 40px 0 40px;
+		text-align: center;
+
+		&--darken {
+			opacity: 0.5;
+			mix-blend-mode: soft-light;
+		}
+	}
+
+	&__text {
+		padding: 33px 0;
+	}
+
+	.button--cta {
+		width: 180px;
+	}
+}

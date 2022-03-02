@@ -1,0 +1,19 @@
+@use "../variables/colors" as colors;
+@import "../variables/breakpoints";
+
+button:hover {
+	cursor: pointer;
+}
+
+.button {
+	&--cta {
+		padding: 17px 30px;
+		color: colors.$white;
+		background-color: colors.$yellow-gold;
+		border: none;
+	}
+}
+
+.icon--close {
+	display: none;
+}

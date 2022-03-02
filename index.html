@@ -2,14 +2,72 @@
 <html lang="en">
 
 <head>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<link rel="stylesheet" href="/dist/css/styles.css" />
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Document</title>
+	<title>Scoot</title>
 </head>
 
 <body>
+	<header class="header">
+		<nav class="nav">
+			<div class="nav__top">
+				<svg class="nav__menu__icon icon--open" width="20" height="16" viewBox="0 0 20 16" fill="none"
+					xmlns="http://www.w3.org/2000/svg">
+					<g id="Group">
+						<rect id="Rectangle" width="19.6923" height="3.69231" fill="#FCB72B" />
+						<rect id="Rectangle Copy" y="6.15381" width="19.6923" height="3.69231" fill="#FCB72B" />
+						<rect id="Rectangle Copy 2" y="12.3077" width="19.6923" height="3.69231" fill="#FCB72B" />
+					</g>
+				</svg>
+				<svg class="nav__menu__icon icon--close" width="18" height="18" viewBox="0 0 18 18" fill="none"
+					xmlns="http://www.w3.org/2000/svg">
+					<g id="Group">
+						<rect id="Rectangle Copy" x="3.18945" y="0.7323" width="19.6923" height="3.69231"
+							transform="rotate(45 3.18945 0.7323)" fill="#FCB72B" />
+						<rect id="Rectangle Copy 2" x="0.578125" y="14.6569" width="19.6923" height="3.69231"
+							transform="rotate(-45 0.578125 14.6569)" fill="#FCB72B" />
+					</g>
+				</svg>
+				<a class="logo nav__logo" href="#">
+					<img src="/src/images/scoot-logo.svg" alt="Scoot logo" />
+				</a>
+			</div>
+			<div class="nav__menu">
+				<ul class="nav__list">
+					<li class="nav__list__item">
+						<a href="#">About</a>
+					</li>
+					<li class="nav__list__item">
+						<a href="#">Location</a>
+					</li>
+					<li class="nav__list__item">
+						<a href="#">Careers</a>
+					</li>
+				</ul>
+				<div class="nav__button">
+					<button class="button button--cta">Get Scootin</button>
+				</div>
+			</div>
+		</nav>
+		<div class="header__content">
+			<h1 class="header__title">Scooter sharing made simple</h1>
+			<p class="header__text">
+				Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each
+				of
+				our cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!
+			</p>
+			<button class="button button--cta">Get Scootin</button>
+		</div>
+		<svg class="header__arrow" width="140" height="151" viewBox="0 0 140 151" fill="none"
+			xmlns="http://www.w3.org/2000/svg">
+			<path d="M95.9517 145.444L134.378 107.018L95.9517 68.5916" stroke="#FCB72B" stroke-width="15"
+				stroke-linejoin="bevel" />
+			<path d="M-312 8H-41.8852V107.369H134.378" stroke="#FCB72B" stroke-width="15" stroke-linejoin="bevel" />
+		</svg>
+	</header>
 	<script src="/dist/scripts/app.js"></script>
 </body>
 

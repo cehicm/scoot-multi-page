@@ -1,0 +1,61 @@
+@use "../variables/colors" as colors;
+@import "../variables/breakpoints";
+
+//General
+h1,
+h2,
+h3,
+a,
+button {
+	font-family: "Space Mono";
+	font-weight: 700;
+	margin: 0;
+}
+
+p {
+	margin: 0;
+	font-family: "Lexend Deca";
+	font-weight: 400;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+//Repeated
+
+//Header
+.header {
+	color: colors.$white;
+	&__title {
+		font-size: 40px;
+		line-height: 40px;
+		letter-spacing: -1.7857142686843872px;
+	}
+
+	&__text {
+		font-size: 15px;
+		line-height: 25px;
+		letter-spacing: 0px;
+	}
+}
+
+//Navigation
+.nav__list__item > a {
+	font-size: 18px;
+	line-height: 25px;
+	letter-spacing: 0px;
+	color: colors.$nav-light-gray;
+}
+
+//Components
+.button--cta {
+	font-size: 15px;
+	line-height: 25px;
+}
