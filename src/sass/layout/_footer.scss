@@ -5,10 +5,15 @@
 	text-align: center;
 	background-color: colors.$light-black;
 
+	&__title {
+		max-width: 320px;
+	}
+
 	&__top,
 	&__top__buttons {
 		display: flex;
 		align-content: center;
+		align-items: center;
 	}
 	&__top {
 		position: relative;
@@ -58,11 +63,15 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		gap: 25px;
+		gap: 35px;
 		padding: 92px 0 88px 0;
 
 		&__icon:hover {
-			filter: hue-rotate(336deg);
+			transition: filter 0.5s;
+
+			&:hover {
+				filter: contrast(1.7);
+			}
 		}
 	}
 }

@@ -228,9 +228,13 @@ body {
   text-align: center;
   background-color: #333a44;
 }
+.footer__title {
+  max-width: 320px;
+}
 .footer__top, .footer__top__buttons {
   display: flex;
   align-content: center;
+  align-items: center;
 }
 .footer__top {
   position: relative;
@@ -269,11 +273,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 25px;
+  gap: 35px;
   padding: 92px 0 88px 0;
 }
 .footer__social__icon:hover {
-  filter: hue-rotate(336deg);
+  transition: filter 0.5s;
+}
+.footer__social__icon:hover:hover {
+  filter: contrast(1.7);
 }
 
 h1,
@@ -343,6 +350,9 @@ a {
   line-height: 25px;
   letter-spacing: 0px;
   color: #939caa;
+}
+.footer__menu__item > a:hover {
+  text-decoration: underline;
 }
 
 .home__wrapper .app__item__title {
