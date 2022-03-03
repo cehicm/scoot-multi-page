@@ -226,13 +226,13 @@ a {
   color: #e5ecf4;
 }
 
-.home-about .app__item__title {
+.home-app .app__item__title {
   font-size: 20px;
   line-height: 28px;
   letter-spacing: -0.8928571343px;
   color: #495567;
 }
-.home-about .app__item__text {
+.home-app .app__item__text {
   font-size: 15px;
   line-height: 25px;
   color: #939caa;
@@ -243,15 +243,23 @@ a {
   line-height: 25px;
 }
 
-.home-about .app__wrapper {
+.home-app .app__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 55px;
   text-align: center;
+  padding: 0 20px;
   margin: 120px 0;
 }
-.home-about .app__item__image {
+.home-app .app__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+.home-app .app__item__image {
   padding: 24px;
   background: #fcb72b;
   border-radius: 50%;
