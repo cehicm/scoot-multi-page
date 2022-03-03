@@ -9,3 +9,8 @@ body {
 .display-block {
 	display: block;
 }
+
+.body-menu-open {
+	overflow: hidden;
+	position: fixed;
+}

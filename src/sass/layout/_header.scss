@@ -6,9 +6,10 @@
 	background: url("/src/images/mobile/home/mobile-hero.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	padding-bottom: 20px;
 
 	@include sc-breakpoint(768) {
-		background: url("/src/images/tablet/home/tablet-hero.svg");
+		background-image: url("/src/images/tablet/home/tablet-hero.svg");
 	}
 
 	&--darken {
@@ -51,6 +52,26 @@
 			gap: 15px;
 			right: 0;
 			bottom: 20px;
+		}
+	}
+
+	&__arrow {
+		img {
+			animation: moveX 2s infinite;
+			animation-direction: alternate;
+
+			@keyframes moveX {
+				0% {
+					transform: translate(0, 0);
+				}
+				100% {
+					transform: translate(150px, 0);
+				}
+			}
+
+			@include sc-breakpoint(768) {
+				animation: unset;
+			}
 		}
 	}
 }
