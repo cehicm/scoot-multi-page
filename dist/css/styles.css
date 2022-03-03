@@ -52,6 +52,26 @@ body {
   src: local(""), url("/dist/fonts/lexend-deca/lexend-deca-v15-latin-700.eot?#iefix") format("embedded-opentype"), url("/dist/fonts/lexend-deca/lexend-deca-v15-latin-700.woff2") format("woff2"), url("/dist/fonts/lexend-deca/lexend-deca-v15-latin-700.woff") format("woff"), url("/dist/fonts/lexend-deca/lexend-deca-v15-latin-700.ttf") format("truetype"), url("/dist/fonts/lexend-deca/lexend-deca-v15-latin-700.svg#LexendDeca") format("svg");
   /* Legacy iOS */
 }
+/* space-mono-regular - latin */
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/dist/fonts/space-mono/space-mono-v10-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("/dist/fonts/space-mono/space-mono-v10-latin-regular.eot?#iefix") format("embedded-opentype"), url("/dist/fonts/space-mono/space-mono-v10-latin-regular.woff2") format("woff2"), url("/dist/fonts/space-mono/space-mono-v10-latin-regular.woff") format("woff"), url("/dist/fonts/space-mono/space-mono-v10-latin-regular.ttf") format("truetype"), url("/dist/fonts/space-mono/space-mono-v10-latin-regular.svg#SpaceMono") format("svg");
+  /* Legacy iOS */
+}
+/* space-mono-700 - latin */
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/dist/fonts/space-mono/space-mono-v10-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("/dist/fonts/space-mono/space-mono-v10-latin-700.eot?#iefix") format("embedded-opentype"), url("/dist/fonts/space-mono/space-mono-v10-latin-700.woff2") format("woff2"), url("/dist/fonts/space-mono/space-mono-v10-latin-700.woff") format("woff"), url("/dist/fonts/space-mono/space-mono-v10-latin-700.ttf") format("truetype"), url("/dist/fonts/space-mono/space-mono-v10-latin-700.svg#SpaceMono") format("svg");
+  /* Legacy iOS */
+}
 button:hover {
   cursor: pointer;
 }
