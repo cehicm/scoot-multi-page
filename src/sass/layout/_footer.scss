@@ -1,0 +1,63 @@
+@use "../variables/colors" as colors;
+@import "../variables/breakpoints";
+
+.footer {
+	text-align: center;
+	background-color: colors.$light-black;
+
+	&__top,
+	&__top__buttons {
+		display: flex;
+		align-content: center;
+	}
+	&__top {
+		position: relative;
+		flex-direction: column;
+		gap: 44px;
+		padding: 93px 32px;
+		background-color: colors.$text-dark-gray;
+
+		&__buttons {
+			justify-content: center;
+			gap: 20px;
+			text-align: left;
+		}
+
+		.footer-bg__img {
+			position: absolute;
+			bottom: 0;
+
+			&--border {
+				left: 0;
+			}
+
+			&--full {
+				right: 0;
+			}
+		}
+	}
+
+	&__bottom {
+		&__menu,
+		&__list {
+			display: flex;
+			flex-direction: column;
+			align-content: center;
+		}
+
+		&__list {
+			gap: 30px;
+		}
+	}
+
+	&__logo {
+		padding: 64px 0;
+	}
+
+	&__social {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 25px;
+	}
+}
