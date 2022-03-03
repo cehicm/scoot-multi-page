@@ -7,6 +7,10 @@
 
 	&__title {
 		max-width: 320px;
+
+		@include sc-breakpoint(768) {
+			max-width: 300px;
+		}
 	}
 
 	&__top,
@@ -21,6 +25,10 @@
 		gap: 44px;
 		padding: 93px 32px;
 		background-color: colors.$text-dark-gray;
+
+		@include sc-breakpoint(768) {
+			padding: 62px 179px;
+		}
 
 		&__buttons {
 			justify-content: center;
@@ -39,24 +47,56 @@
 			&--full {
 				right: 0;
 			}
+
+			&--midle {
+				display: none;
+
+				@include sc-breakpoint(768) {
+					display: block;
+				}
+			}
 		}
 	}
 
 	&__bottom {
+		@include sc-breakpoint(768) {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+		}
+
 		&__menu,
 		&__list {
 			display: flex;
 			flex-direction: column;
 			align-content: center;
+
+			@include sc-breakpoint(768) {
+				flex-direction: row;
+			}
+		}
+
+		&__menu {
+			@include sc-breakpoint(768) {
+				gap: 58px;
+			}
 		}
 
 		&__list {
 			gap: 30px;
+
+			@include sc-breakpoint(768) {
+				align-items: center;
+			}
 		}
 	}
 
 	&__logo {
 		padding: 64px 0 49px 0;
+
+		@include sc-breakpoint(768) {
+			padding: 32px 0;
+		}
 	}
 
 	&__social {
@@ -65,6 +105,10 @@
 		justify-content: center;
 		gap: 35px;
 		padding: 92px 0 88px 0;
+
+		@include sc-breakpoint(768) {
+			padding: 0;
+		}
 
 		&__icon:hover {
 			transition: filter 0.5s;
