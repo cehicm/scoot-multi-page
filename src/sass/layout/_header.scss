@@ -7,6 +7,10 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 
+	@include sc-breakpoint(768) {
+		background: url("/src/images/tablet/home/tablet-hero.svg");
+	}
+
 	&--darken {
 		background-color: colors.$light-black;
 		background-blend-mode: darken;
