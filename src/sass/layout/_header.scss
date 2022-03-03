@@ -2,13 +2,13 @@
 @import "../variables/breakpoints";
 
 .header {
+	position: relative;
 	background: url("/src/images/mobile/home/mobile-hero.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
 
 	&--darken {
 		background-color: colors.$light-black;
-
 		background-blend-mode: darken;
 	}
 
@@ -25,25 +25,28 @@
 		}
 	}
 
+	&__title {
+		max-width: 400px;
+	}
+
 	&__text {
 		padding: 33px 0;
+		max-width: 550px;
 	}
 
 	.button--cta {
 		width: 180px;
 	}
 
-	&__arrow {
-		animation: moveX 2s infinite;
-		animation-direction: alternate;
+	&__circles {
+		display: none;
 
-		@keyframes moveX {
-			0% {
-				transform: translate(0, 0);
-			}
-			100% {
-				transform: translate(150px, 0);
-			}
+		@include sc-breakpoint(768) {
+			position: absolute;
+			display: flex;
+			gap: 15px;
+			right: 0;
+			bottom: 20px;
 		}
 	}
 }

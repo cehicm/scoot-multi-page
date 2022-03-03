@@ -51,6 +51,10 @@ a {
 	line-height: 25px;
 	letter-spacing: 0px;
 	color: colors.$light-gray;
+
+	@include sc-breakpoint(768) {
+		color: colors.$text-light-gray;
+	}
 }
 
 //Footer

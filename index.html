@@ -55,10 +55,17 @@
 				</p>
 				<button class="button button--cta">Get Scootin</button>
 			</div>
-			<svg class="header__arrow" width="140" height="151" viewBox="0 0 140 151" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M95.9517 145.444L134.378 107.018L95.9517 68.5916" stroke="#FCB72B" stroke-width="15" stroke-linejoin="bevel" />
-				<path d="M-312 8H-41.8852V107.369H134.378" stroke="#FCB72B" stroke-width="15" stroke-linejoin="bevel" />
-			</svg>
+			<picture class="header__arrow">
+				<source class="header__arrow" srcset="/src/images/icons/arrow-pointing-right-long.svg" media="(min-width: 768px)" />
+				<source srcset="/src/images/icons/header-arrow.svg" media="(min-width:320px)" />
+				<img alt="Arrow pointing right" src="/src/images/icons/header-arrow.svg" />
+			</picture>
+
+			<div class="header__circles">
+				<img src="/src/images/icons/header-circle-empty.svg" alt="Circle with white border and transparent background" />
+				<img src="/src/images/icons/header-circle-empty.svg" alt="Circle with white border and transparent background" />
+				<img src="/src/images/icons/header-circle-full.svg" alt="White circle" />
+			</div>
 		</header>
 
 		<div class="home__wrapper">
