@@ -162,6 +162,18 @@ body {
 .header .button--cta {
   width: 180px;
 }
+.header__arrow {
+  animation: moveX 2s infinite;
+  animation-direction: alternate;
+}
+@keyframes moveX {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(150px, 0);
+  }
+}
 
 .nav {
   position: relative;
@@ -251,13 +263,17 @@ body {
   gap: 30px;
 }
 .footer__logo {
-  padding: 64px 0;
+  padding: 64px 0 49px 0;
 }
 .footer__social {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 25px;
+  padding: 92px 0 88px 0;
+}
+.footer__social__icon:hover {
+  filter: hue-rotate(336deg);
 }
 
 h1,
