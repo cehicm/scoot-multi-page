@@ -11,6 +11,24 @@ button:hover {
 		color: colors.$white;
 		background-color: colors.$yellow-gold;
 		border: none;
+
+		transition: transform 0.5s;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+
+	&--learn-more {
+		padding: 14px 43px;
+		background-color: colors.$yellow-gold;
+		color: colors.$white;
+		border: none;
+		transition: transform 0.5s;
+
+		&:hover {
+			transform: scale(1.1);
+		}
 	}
 }
 

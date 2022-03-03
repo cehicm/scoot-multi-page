@@ -1,29 +1,82 @@
 @use "../variables/colors" as colors;
 @import "../variables/breakpoints";
+.home {
+	&__wrapper {
+		padding: 0 20px;
+	}
 
-.home-app {
-	.app {
-		&__wrapper {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			gap: 55px;
-			text-align: center;
-			padding: 0 20px;
-			margin: 120px 0;
+	&__app {
+		.app {
+			&__wrapper {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 55px;
+				text-align: center;
+				padding: 0 20px;
+				margin: 120px 0;
+			}
+			&__item {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				gap: 35px;
+				&__image {
+					padding: 24px;
+					background: colors.$yellow-gold;
+					border-radius: 50%;
+				}
+			}
 		}
+	}
 
-		&__item {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			gap: 35px;
+	&__about {
+		.about {
+			&__item {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
 
-			&__image {
-				padding: 24px;
-				background: colors.$yellow-gold;
-				border-radius: 50%;
+				&__arrow {
+					position: absolute;
+				}
+
+				&__image {
+					border-radius: 50%;
+
+					&__wrapper {
+						position: relative;
+
+						.arrow {
+							&--telemetry {
+								bottom: 0;
+							}
+
+							&--near-you {
+								transform: translateX(-40px);
+							}
+
+							&--payments {
+								right: 0;
+								transform: translateX(40px);
+							}
+						}
+					}
+				}
+
+				&__title {
+					padding-top: 60px;
+				}
+
+				&__text {
+					padding: 45px 19.5px 49px 19.5px;
+				}
+
+				.button--learn-more {
+					margin-bottom: 114px;
+				}
 			}
 		}
 	}

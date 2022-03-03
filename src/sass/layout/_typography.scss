@@ -1,6 +1,5 @@
-@use "../variables/colors" as colors;
+@use "../variables/colors"as colors;
 @import "../variables/breakpoints";
-
 //General
 h1,
 h2,
@@ -29,6 +28,12 @@ a {
 }
 
 //Repeated
+.header__text,
+.about__item__text {
+	font-size: 15px;
+	line-height: 25px;
+	letter-spacing: 0px;
+}
 
 //Header
 .header {
@@ -37,12 +42,6 @@ a {
 		font-size: 40px;
 		line-height: 40px;
 		letter-spacing: -1.7857142686843872px;
-	}
-
-	&__text {
-		font-size: 15px;
-		line-height: 25px;
-		letter-spacing: 0px;
 	}
 }
 
@@ -55,18 +54,33 @@ a {
 }
 
 //Home
-.home-app {
-	.app__item__title {
-		font-size: 20px;
-		line-height: 28px;
-		letter-spacing: -0.8928571343421936px;
-		color: colors.$text-dark-gray;
+.home__wrapper {
+	.app__item {
+		&__title {
+			font-size: 20px;
+			line-height: 28px;
+			letter-spacing: -0.8928571343421936px;
+			color: colors.$text-dark-gray;
+		}
+
+		&__text {
+			font-size: 15px;
+			line-height: 25px;
+			color: colors.$text-light-gray;
+		}
 	}
 
-	.app__item__text {
-		font-size: 15px;
-		line-height: 25px;
-		color: colors.$text-light-gray;
+	.about__item {
+		&__title {
+			font-size: 32px;
+			line-height: 32px;
+			letter-spacing: -1.4285714626312256px;
+			color: colors.$text-dark-gray;
+		}
+
+		&__text {
+			color: colors.$text-light-gray;
+		}
 	}
 }
 

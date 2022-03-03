@@ -1,97 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<link rel="stylesheet" href="/dist/css/styles.css" />
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Scoot</title>
+	</head>
 
-<head>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<link rel="stylesheet" href="/dist/css/styles.css" />
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Scoot</title>
-</head>
-
-<body>
-	<header class="header">
-		<nav class="nav">
-			<div class="nav__top">
-				<svg class="nav__menu__icon icon--open" width="20" height="16" viewBox="0 0 20 16" fill="none"
-					xmlns="http://www.w3.org/2000/svg">
-					<g id="Group">
-						<rect id="Rectangle" width="19.6923" height="3.69231" fill="#FCB72B" />
-						<rect id="Rectangle Copy" y="6.15381" width="19.6923" height="3.69231" fill="#FCB72B" />
-						<rect id="Rectangle Copy 2" y="12.3077" width="19.6923" height="3.69231" fill="#FCB72B" />
-					</g>
-				</svg>
-				<svg class="nav__menu__icon icon--close" width="18" height="18" viewBox="0 0 18 18" fill="none"
-					xmlns="http://www.w3.org/2000/svg">
-					<g id="Group">
-						<rect id="Rectangle Copy" x="3.18945" y="0.7323" width="19.6923" height="3.69231"
-							transform="rotate(45 3.18945 0.7323)" fill="#FCB72B" />
-						<rect id="Rectangle Copy 2" x="0.578125" y="14.6569" width="19.6923" height="3.69231"
-							transform="rotate(-45 0.578125 14.6569)" fill="#FCB72B" />
-					</g>
-				</svg>
-				<a class="logo nav__logo" href="#">
-					<img src="/src/images/scoot-logo.svg" alt="Scoot logo" />
-				</a>
-			</div>
-			<div class="nav__menu">
-				<ul class="nav__list">
-					<li class="nav__list__item">
-						<a href="#">About</a>
-					</li>
-					<li class="nav__list__item">
-						<a href="#">Location</a>
-					</li>
-					<li class="nav__list__item">
-						<a href="#">Careers</a>
-					</li>
-				</ul>
-				<div class="nav__button">
-					<button class="button button--cta">Get Scootin</button>
+	<body>
+		<header class="header">
+			<nav class="nav">
+				<div class="nav__top">
+					<svg class="nav__menu__icon icon--open" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g id="Group">
+							<rect id="Rectangle" width="19.6923" height="3.69231" fill="#FCB72B" />
+							<rect id="Rectangle Copy" y="6.15381" width="19.6923" height="3.69231" fill="#FCB72B" />
+							<rect id="Rectangle Copy 2" y="12.3077" width="19.6923" height="3.69231" fill="#FCB72B" />
+						</g>
+					</svg>
+					<svg class="nav__menu__icon icon--close" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g id="Group">
+							<rect id="Rectangle Copy" x="3.18945" y="0.7323" width="19.6923" height="3.69231" transform="rotate(45 3.18945 0.7323)" fill="#FCB72B" />
+							<rect id="Rectangle Copy 2" x="0.578125" y="14.6569" width="19.6923" height="3.69231" transform="rotate(-45 0.578125 14.6569)" fill="#FCB72B" />
+						</g>
+					</svg>
+					<a class="logo nav__logo" href="#">
+						<img src="/src/images/scoot-logo.svg" alt="Scoot logo" />
+					</a>
 				</div>
+				<div class="nav__menu">
+					<ul class="nav__list">
+						<li class="nav__list__item">
+							<a href="#">About</a>
+						</li>
+						<li class="nav__list__item">
+							<a href="#">Location</a>
+						</li>
+						<li class="nav__list__item">
+							<a href="#">Careers</a>
+						</li>
+					</ul>
+					<div class="nav__button">
+						<button class="button button--cta">Get Scootin</button>
+					</div>
+				</div>
+			</nav>
+			<div class="header__content">
+				<h1 class="header__title">Scooter sharing made simple</h1>
+				<p class="header__text">
+					Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re
+					away!
+				</p>
+				<button class="button button--cta">Get Scootin</button>
 			</div>
-		</nav>
-		<div class="header__content">
-			<h1 class="header__title">Scooter sharing made simple</h1>
-			<p class="header__text">
-				Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each
-				of
-				our cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!
-			</p>
-			<button class="button button--cta">Get Scootin</button>
-		</div>
-		<svg class="header__arrow" width="140" height="151" viewBox="0 0 140 151" fill="none"
-			xmlns="http://www.w3.org/2000/svg">
-			<path d="M95.9517 145.444L134.378 107.018L95.9517 68.5916" stroke="#FCB72B" stroke-width="15"
-				stroke-linejoin="bevel" />
-			<path d="M-312 8H-41.8852V107.369H134.378" stroke="#FCB72B" stroke-width="15" stroke-linejoin="bevel" />
-		</svg>
-	</header>
+			<svg class="header__arrow" width="140" height="151" viewBox="0 0 140 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M95.9517 145.444L134.378 107.018L95.9517 68.5916" stroke="#FCB72B" stroke-width="15" stroke-linejoin="bevel" />
+				<path d="M-312 8H-41.8852V107.369H134.378" stroke="#FCB72B" stroke-width="15" stroke-linejoin="bevel" />
+			</svg>
+		</header>
 
-	<section class="home-app">
-		<div class="app__wrapper">
-			<div class="app__item">
-				<img src="/src/images/icons/app.svg" alt="Hand holding phone icon" class="app__item__image">
-				<h2 class="app__item__title">Locate with app</h2>
-				<p class="app__item__text">Use the app to find the nearest scooter to you. We are continuously placing
-					scooters in the areas with most demand, so one should never be too far away. </p>
-			</div>
-			<div class="app__item">
-				<img src="/src/images/icons/pick-your-scooter.svg" alt="Scooter icon" class="app__item__image">
-				<h2 class="app__item__title">Pick your scooter</h2>
-				<p class="app__item__text">We show the most important info for the scooters closest to you. So you know
-					how much charge they have left and can see roughly how much it will cost.</p>
-			</div>
-			<div class="app__item">
-				<img src="/src/images/icons/enjoy-the-ride.svg" alt="Man riding scooter icon" class="app__item__image">
-				<h2 class="app__item__title">Enjoy the ride</h2>
-				<p class="app__item__text">Scan the QR code and the bike will unlock. Retract the cable lock, put on a
-					helmet, and you’re off! Always lock bikes away from walkways and accessibility ramps.</p>
-			</div>
-		</div>
-	</section>
-	<script src="/dist/scripts/app.js"></script>
-</body>
+		<div class="home__wrapper">
+			<section class="home__app">
+				<div class="app__wrapper">
+					<div class="app__item">
+						<img src="/src/images/icons/app.svg" alt="Hand holding phone icon" class="app__item__image" />
+						<h2 class="app__item__title">Locate with app</h2>
+						<p class="app__item__text">
+							Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away.
+						</p>
+					</div>
+					<div class="app__item">
+						<img src="/src/images/icons/pick-your-scooter.svg" alt="Scooter icon" class="app__item__image" />
+						<h2 class="app__item__title">Pick your scooter</h2>
+						<p class="app__item__text">
+							We show the most important info for the scooters closest to you. So you know how much charge they have left and can see roughly how much it will cost.
+						</p>
+					</div>
+					<div class="app__item">
+						<img src="/src/images/icons/enjoy-the-ride.svg" alt="Man riding scooter icon" class="app__item__image" />
+						<h2 class="app__item__title">Enjoy the ride</h2>
+						<p class="app__item__text">
+							Scan the QR code and the bike will unlock. Retract the cable lock, put on a helmet, and you’re off! Always lock bikes away from walkways and accessibility ramps.
+						</p>
+					</div>
+				</div>
+			</section>
 
+			<section class="home__about">
+				<div class="about__wrapper">
+					<div class="about__item">
+						<div class="about__item__image__wrapper">
+							<img src="/src/images/icons/arrow-pointing-left-long.svg" alt="Yellow arrow pointing left" class="about__item__arrow arrow--telemetry" />
+							<img src="/src/images/mobile/home/telemetry.svg" alt="Woman holding phone in hand" class="about__item__image" />
+						</div>
+						<h3 class="about__item__title">Easy to use riding telemetry</h3>
+						<p class="about__item__text">
+							The Scoot app is available with riding telemetry. This means it can show you your average speed, how long you've been using the scooter, your traveling distance, and many more things all
+							in an easy to use app.
+						</p>
+						<button class="button button--learn-more">Learn More</button>
+					</div>
+					<div class="about__item">
+						<div class="about__item__image__wrapper">
+							<img src="/src/images/icons/arrow-pointing-right-long.svg" alt="Yellow arrow pointing right" class="about__item__arrow arrow--near-you" />
+							<img src="/src/images/mobile/home/coming-near-you.svg" alt="Woman holding phone in hand" class="about__item__image" />
+						</div>
+						<h3 class="about__item__title">Coming to a city near you</h3>
+						<p class="about__item__text">
+							Scoot is available in 4 major cities so far. We’re expanding rapidly, so be sure to let us know if you want to see us in your hometown. We’re aiming to let our scooters loose on 23
+							cities over the coming year.
+						</p>
+						<button class="button button--learn-more">Learn More</button>
+					</div>
+
+					<div class="about__item">
+						<div class="about__item__image__wrapper">
+							<img src="/src/images/icons/arrow-pointing-left.svg" alt="Yellow arrow pointing left" class="about__item__arrow arrow--payments" />
+							<img src="/src/images/mobile/home/zero-hassle-payments.svg" alt="Woman holding phone in hand" class="about__item__image" />
+						</div>
+						<h3 class="about__item__title">Zero hassle payments</h3>
+						<p class="about__item__text">
+							Our payment is as easy as one two three. We accept most credit cards and debit cards. You can also link your PayPal account inside the app. Need to pay later? No worries! You can defer
+							payment for up to a month.
+						</p>
+						<button class="button button--learn-more">Learn More</button>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<script src="/dist/scripts/app.js"></script>
+	</body>
 </html>
