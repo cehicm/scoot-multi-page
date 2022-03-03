@@ -32,4 +32,18 @@
 	.button--cta {
 		width: 180px;
 	}
+
+	&__arrow {
+		animation: moveX 2s infinite;
+		animation-direction: alternate;
+
+		@keyframes moveX {
+			0% {
+				transform: translate(0, 0);
+			}
+			100% {
+				transform: translate(150px, 0);
+			}
+		}
+	}
 }
