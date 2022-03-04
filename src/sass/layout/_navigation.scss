@@ -44,7 +44,7 @@
 	&__menu {
 		display: flex;
 
-		@media screen and (min-width: 320px) and (max-width: 768px) {
+		@media screen and (min-width: 320px) and (max-width: 767px) {
 			transform: translateX(-100%);
 			position: fixed;
 			height: 100%;

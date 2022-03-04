@@ -12,6 +12,10 @@
 		background-image: url("/src/images/tablet/home/tablet-hero.svg");
 	}
 
+	@include sc-breakpoint(1024) {
+		background-image: url("/src/images/desktop/home/hero-desktop.svg");
+	}
+
 	&--darken {
 		background-color: colors.$light-black;
 		background-blend-mode: darken;
@@ -57,12 +61,15 @@
 		}
 
 		@include sc-breakpoint(1024) {
-			padding: 54px 0 54px 46px;
+			padding: 54px 0 54px 65px;
 			max-width: 346px;
 		}
 
-		@include sc-breakpoint(1280) {
+		@include sc-breakpoint(1080) {
 			padding: 54px 0 54px 96px;
+		}
+
+		@include sc-breakpoint(1280) {
 			max-width: 405px;
 		}
 	}
@@ -121,16 +128,9 @@
 				right: 0;
 			}
 
-			@include sc-breakpoint(1080) {
-				right: 8%;
-			}
-
-			@include sc-breakpoint(1280) {
-				right: 14%;
-			}
-
-			@include sc-breakpoint(1400) {
-				right: 20%;
+			@include sc-breakpoint(1200) {
+				right: auto;
+				left: 700px;
 			}
 		}
 
