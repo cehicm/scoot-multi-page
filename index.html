@@ -119,16 +119,24 @@
 							<img src="/src/images/icons/arrow-pointing-left-long.svg" alt="Yellow arrow pointing left" />
 						</picture>
 						<div class="about__item__image__wrapper">
-							<img src="/src/images/mobile/home/telemetry.svg" alt="Woman holding phone in hand" class="about__item__image" />
+							<picture class="about__item__image">
+								<source srcset="/src/images/desktop/home/telemetry.svg" media="(min-width: 1024px)" />
+								<source srcset="/src/images/tablet/home/telemetry.svg" media="(min-width: 768px)" />
+								<source srcset="/src/images/mobile/home/telemetry.svg" media="(min-width:320px)" />
+								<img src="/src/images/mobile/home/telemetry.svg" alt="Woman holding phone in hand" />
+							</picture>
 						</div>
-						<h3 class="about__item__title">Easy to use riding telemetry</h3>
-						<p class="about__item__text">
-							The Scoot app is available with riding telemetry. This means it can show you your average speed, how long you've been using the scooter, your traveling distance, and many more things all
-							in an easy to use app.
-						</p>
-						<button class="button button--learn-more">Learn More</button>
+
+						<div class="about__item__content">
+							<h3 class="about__item__title">Easy to use riding telemetry</h3>
+							<p class="about__item__text">
+								The Scoot app is available with riding telemetry. This means it can show you your average speed, how long you've been using the scooter, your traveling distance, and many more things
+								all in an easy to use app.
+							</p>
+							<button class="button button--learn-more">Learn More</button>
+						</div>
 					</div>
-					<div class="about__item">
+					<div class="about__item about__item--flip">
 						<img src="/src/images/icons/half-circe-right.svg" alt="Gray half of circle" class="half-circle half-circle--right" />
 						<picture class="about__item__arrow arrow--near-you">
 							<source srcset="/src/images/icons/arrow-telemetry-tablet.svg" media="(min-width: 768px)" />
@@ -136,14 +144,21 @@
 							<img src="/src/images/icons/arrow-pointing-right-long.svg" alt="Yellow arrow pointing right" />
 						</picture>
 						<div class="about__item__image__wrapper">
-							<img src="/src/images/mobile/home/coming-near-you.svg" alt="Woman holding phone in hand" class="about__item__image" />
+							<picture class="about__item__image">
+								<source srcset="/src/images/desktop/home/coming-near-you.svg" media="(min-width: 1024px)" />
+								<source srcset="src/images/tablet/home/coming-near-you.svg" media="(min-width: 768px)" />
+								<source srcset="src/images/mobile/home/coming-near-you.svg" media="(min-width:320px)" />
+								<img src="/src/images/mobile/home/coming-near-you.svg" alt="Woman holding phone in hand" />
+							</picture>
 						</div>
-						<h3 class="about__item__title">Coming to a city near you</h3>
-						<p class="about__item__text">
-							Scoot is available in 4 major cities so far. We’re expanding rapidly, so be sure to let us know if you want to see us in your hometown. We’re aiming to let our scooters loose on 23
-							cities over the coming year.
-						</p>
-						<button class="button button--learn-more">Learn More</button>
+						<div class="about__item__content">
+							<h3 class="about__item__title">Coming to a city near you</h3>
+							<p class="about__item__text">
+								Scoot is available in 4 major cities so far. We’re expanding rapidly, so be sure to let us know if you want to see us in your hometown. We’re aiming to let our scooters loose on 23
+								cities over the coming year.
+							</p>
+							<button class="button button--learn-more">Learn More</button>
+						</div>
 					</div>
 
 					<div class="about__item">
@@ -151,18 +166,24 @@
 						<picture class="about__item__arrow arrow--payments">
 							<source srcset="/src/images/icons/arrow-pointing-left-long.svg" media="(min-width: 768px)" />
 							<source srcset="/src/images/icons/arrow-pointing-left.svg" media="(min-width:320px)" />
-
 							<img src="/src/images/icons/arrow-pointing-left.svg" alt="Yellow arrow pointing left" />
 						</picture>
 						<div class="about__item__image__wrapper">
-							<img src="/src/images/mobile/home/zero-hassle-payments.svg" alt="Woman holding phone in hand" class="about__item__image" />
+							<picture class="about__item__image">
+								<source srcset="/src/images/desktop/home/zero-hassle-payments.svg" media="(min-width: 1024px)" />
+								<source srcset="/src/images/tablet/home/zero-hassle-payments.svg" media="(min-width: 768px)" />
+								<source srcset="/src/images/mobile/home/zero-hassle-payments.svg" media="(min-width:320px)" />
+								<img src="/src/images/mobile/home/zero-hassle-payments.svg" alt="Woman holding phone in hand" />
+							</picture>
 						</div>
-						<h3 class="about__item__title">Zero hassle payments</h3>
-						<p class="about__item__text">
-							Our payment is as easy as one two three. We accept most credit cards and debit cards. You can also link your PayPal account inside the app. Need to pay later? No worries! You can defer
-							payment for up to a month.
-						</p>
-						<button class="button button--learn-more">Learn More</button>
+						<div class="about__item__content">
+							<h3 class="about__item__title">Zero hassle payments</h3>
+							<p class="about__item__text">
+								Our payment is as easy as one two three. We accept most credit cards and debit cards. You can also link your PayPal account inside the app. Need to pay later? No worries! You can defer
+								payment for up to a month.
+							</p>
+							<button class="button button--learn-more">Learn More</button>
+						</div>
 					</div>
 				</div>
 			</section>
