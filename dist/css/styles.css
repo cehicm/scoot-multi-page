@@ -601,8 +601,14 @@ a {
     gap: 220px;
   }
 }
+.home__about .about__item__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 @media (min-width: 1024px) {
   .home__about .about__item__content {
+    align-items: flex-start;
     max-width: 440px;
   }
 }

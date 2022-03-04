@@ -100,12 +100,16 @@
 
 				@include sc-breakpoint(1400) {
 					padding: 0 160px;
-
 					gap: 220px;
 				}
 
 				&__content {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+
 					@include sc-breakpoint(1024) {
+						align-items: flex-start;
 						max-width: 440px;
 					}
 				}
