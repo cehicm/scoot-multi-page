@@ -23,8 +23,12 @@
 		position: relative;
 		flex-direction: column;
 		gap: 44px;
-		padding: 93px 32px;
+		padding: 93px 12px;
 		background-color: colors.$text-dark-gray;
+
+		@include sc-breakpoint(425) {
+			padding: 93px 32px;
+		}
 
 		@include sc-breakpoint(768) {
 			padding: 62px 179px;
@@ -48,7 +52,7 @@
 				right: 0;
 			}
 
-			&--midle {
+			&--middle {
 				display: none;
 
 				@include sc-breakpoint(768) {
