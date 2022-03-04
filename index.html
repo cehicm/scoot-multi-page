@@ -77,7 +77,12 @@
 					<div class="app__line"></div>
 					<div class="app__item">
 						<div class="app__image">
-							<img src="/src/images/icons/app.svg" alt="Hand holding phone icon" class="app__item__image" />
+							<picture class="app__item__image">
+								<source srcset="/src/images/icons/app-desktop.svg" media="(min-width: 1024px)" />
+								<source class="header__arrow" srcset="/src/images/icons/app-tablet.svg" media="(min-width: 768px)" />
+								<source srcset="/src/images/icons/app-mobile.svg" media="(min-width: 320px)" />
+								<img src="/src/images/icons/app-mobile.svg" alt="Hand holding phone icon" />
+							</picture>
 						</div>
 						<div class="app__item__content">
 							<h2 class="app__item__title">Locate with app</h2>
@@ -88,7 +93,12 @@
 					</div>
 					<div class="app__item">
 						<div class="app__image">
-							<img src="/src/images/icons/pick-your-scooter.svg" alt="Scooter icon" class="app__item__image" />
+							<picture class="app__item__image">
+								<source srcset="/src/images/icons/pick-your-scooter-desktop.svg" media="(min-width: 1024px)" />
+								<source class="header__arrow" srcset="/src/images/icons/pick-your-scooter-tablet.svg" media="(min-width: 768px)" />
+								<source srcset="/src/images/icons/pick-your-scooter-mobile.svg" media="(min-width: 320px)" />
+								<img src="/src/images/icons/pick-your-scooter-mobile.svg" alt="Scooter icon" />
+							</picture>
 						</div>
 						<div class="app__item__content">
 							<h2 class="app__item__title">Pick your scooter</h2>
@@ -99,7 +109,12 @@
 					</div>
 					<div class="app__item">
 						<div class="app__image">
-							<img src="/src/images/icons/enjoy-the-ride.svg" alt="Man riding scooter icon" class="app__item__image" />
+							<picture class="app__item__image">
+								<source srcset="/src/images/icons/enjoy-the-ride-desktop.svg" media="(min-width: 1024px)" />
+								<source class="header__arrow" srcset="/src/images/icons/enjoy-the-ride-tablet.svg" media="(min-width: 768px)" />
+								<source srcset="/src/images/icons/enjoy-the-ride-mobile.svg" media="(min-width: 320px)" />
+								<img src="/src/images/icons/enjoy-the-ride-mobile.svg" alt="Man riding scooter icon" />
+							</picture>
 						</div>
 						<div class="app__item__content">
 							<h2 class="app__item__title">Enjoy the ride</h2>

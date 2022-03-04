@@ -17,19 +17,67 @@
 				@include sc-breakpoint(768) {
 					text-align: left;
 					gap: 47px;
-					padding: 120px 50px 0 50px;
+					padding: 122px 125px 0 102px;
+				}
+
+				@include sc-breakpoint(1024) {
+					max-width: 80%;
+					flex-direction: row;
+					align-items: flex-start;
+					justify-content: space-between;
+					padding: 122px 0 0 102px;
+				}
+
+				@include sc-breakpoint(1400) {
+					padding: 122px 0 0 165px;
 				}
 			}
 
 			&__image {
-				padding: 24px;
+				height: 56px;
+				width: 56px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 				background: colors.$yellow-gold;
 				border-radius: 50%;
 
 				@include sc-breakpoint(768) {
-					width: 100px;
-					height: 50px;
-					align-self: baseline;
+					width: 200px;
+					height: 96px;
+				}
+
+				@include sc-breakpoint(1024) {
+					width: 96px;
+				}
+			}
+
+			&__item {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				gap: 35px;
+
+				@include sc-breakpoint(768) {
+					flex-direction: row;
+					align-items: flex-start;
+				}
+
+				@include sc-breakpoint(1024) {
+					flex-direction: column;
+				}
+
+				&__text {
+					padding-top: 33px;
+
+					@include sc-breakpoint(1024) {
+						max-width: 250px;
+					}
+
+					@include sc-breakpoint(1400) {
+						max-width: 350px;
+					}
 				}
 			}
 
@@ -40,38 +88,18 @@
 					display: block;
 					position: absolute;
 					top: 0;
-					left: 84px;
+					left: 138px;
 					height: 513px;
 					width: 16px;
 					background-color: colors.$light-gray;
 					z-index: -1;
 				}
-			}
-			&__item {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
-				gap: 35px;
 
-				&__content {
-					@include sc-breakpoint(1024) {
-						display: flex;
-						flex-direction: column;
-						align-items: center;
-					}
-				}
-
-				@include sc-breakpoint(768) {
-					flex-direction: row;
-				}
-
-				&__text {
-					padding-top: 33px;
-
-					@include sc-breakpoint(768) {
-						padding-right: 135px;
-					}
+				@include sc-breakpoint(1024) {
+					width: 70%;
+					height: 16px;
+					top: 160px;
+					left: 0;
 				}
 			}
 		}
