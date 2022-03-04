@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<link rel="stylesheet" href="/dist/css/styles.css" />
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>About Scoot</title>
+	</head>
+
+	<body>
+		<header class="header about-header">
+			<nav class="nav">
+				<div class="nav__top">
+					<svg class="nav__menu__icon icon--open" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g id="Group">
+							<rect id="Rectangle" width="19.6923" height="3.69231" fill="#FCB72B" />
+							<rect id="Rectangle Copy" y="6.15381" width="19.6923" height="3.69231" fill="#FCB72B" />
+							<rect id="Rectangle Copy 2" y="12.3077" width="19.6923" height="3.69231" fill="#FCB72B" />
+						</g>
+					</svg>
+					<svg class="nav__menu__icon icon--close" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g id="Group">
+							<rect id="Rectangle Copy" x="3.18945" y="0.7323" width="19.6923" height="3.69231" transform="rotate(45 3.18945 0.7323)" fill="#FCB72B" />
+							<rect id="Rectangle Copy 2" x="0.578125" y="14.6569" width="19.6923" height="3.69231" transform="rotate(-45 0.578125 14.6569)" fill="#FCB72B" />
+						</g>
+					</svg>
+					<a class="logo nav__logo" href="#">
+						<img src="/src/images/scoot-logo.svg" alt="Scoot logo" />
+					</a>
+				</div>
+				<div class="nav__menu">
+					<ul class="nav__list">
+						<li class="nav__list__item">
+							<a href="/src/html/about.html">About</a>
+						</li>
+						<li class="nav__list__item">
+							<a href="#">Location</a>
+						</li>
+						<li class="nav__list__item">
+							<a href="#">Careers</a>
+						</li>
+					</ul>
+					<div class="nav__button">
+						<button class="button button--cta">Get Scootin</button>
+					</div>
+				</div>
+			</nav>
+			<div class="header__content header__content--title-only">
+				<h1 class="header__title">About</h1>
+			</div>
+		</header>
+
+		<div class="about__wrapper">
+			<div class="about__item">
+				<img src="/src/images/icons/half-circe-left.svg" alt="Gray half of circle" class="half-circle half-circle--left" />
+
+				<picture class="about__item__arrow arrow--telemetry">
+					<source srcset="/src/images/icons/arrow-pointing-left-xxl.svg" media="(min-width: 768px)" />
+					<source srcset="/src/images/icons/arrow-pointing-left-long.svg" media="(min-width:320px)" />
+					<img src="/src/images/icons/arrow-pointing-left-long.svg" alt="Yellow arrow pointing left" />
+				</picture>
+				<div class="about__item__image__wrapper">
+					<picture class="about__item__image">
+						<source srcset="/src/images/desktop/home/telemetry.svg" media="(min-width: 1024px)" />
+						<source srcset="/src/images/tablet/home/telemetry.svg" media="(min-width: 768px)" />
+						<source srcset="/src/images/mobile/home/telemetry.svg" media="(min-width:320px)" />
+						<img src="/src/images/mobile/home/telemetry.svg" alt="Woman holding phone in hand" />
+					</picture>
+				</div>
+
+				<div class="about__item__content">
+					<h3 class="about__item__title">Easy to use riding telemetry</h3>
+					<p class="about__item__text">
+						The Scoot app is available with riding telemetry. This means it can show you your average speed, how long you've been using the scooter, your traveling distance, and many more things all
+						in an easy to use app.
+					</p>
+					<button class="button button--learn-more">Learn More</button>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="footer__wrapper">
+				<div class="footer__top">
+					<img src="/src/images/icons/footer-circle-middle.svg" alt="Empty circle with light gray border" class="footer-bg__img footer-bg__img--border" />
+					<img src="/src/images/icons/footer-circle-middle.svg" alt="Full gray circle" class="footer-bg__img footer-bg__img--middle" />
+					<img src="/src/images/icons/footer-circle-full.svg" alt="Full gray circle" class="footer-bg__img footer-bg__img--full" />
+
+					<h3 class="footer__title">Sign up and Scoot off today</h3>
+					<div class="footer__top__buttons">
+						<div class="button button--download-app">
+							<div class="download-btn__image">
+								<img src="/src/images/icons/apple-icon.svg" alt="Apple icon" />
+							</div>
+							<div class="download-btn__text">
+								<p>Available on the <span class="download-btn__store">AppStore</span></p>
+							</div>
+						</div>
+						<div class="button button--download-app">
+							<div class="download-btn__image">
+								<img src="/src/images/icons/google-play-icon.svg" alt="Google play icon" />
+							</div>
+							<div class="download-btn__text">
+								<p>Get it on <span class="download-btn__store">GooglePlay</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__bottom__menu">
+						<div class="footer__logo">
+							<a href="/index.html"> <img src="/src/images/scoot-logo-white.svg" alt="Scoot logo" /> </a>
+						</div>
+						<ul class="footer__bottom__list">
+							<li class="footer__menu__item"><a href="#">About</a></li>
+							<li class="footer__menu__item"><a href="#">Location</a></li>
+							<li class="footer__menu__item"><a href="#">Careers</a></li>
+						</ul>
+					</div>
+
+					<ul class="footer__social">
+						<li class="footer__social__item">
+							<a href="#"
+								><svg class="footer__social__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M22.675 0H1.325C0.593 0 0 0.593 0 1.325V22.676C0 23.407 0.593 24 1.325 24H12.82V14.706H9.692V11.084H12.82V8.413C12.82 5.313 14.713 3.625 17.479 3.625C18.804 3.625 19.942 3.724 20.274 3.768V7.008L18.356 7.009C16.852 7.009 16.561 7.724 16.561 8.772V11.085H20.148L19.681 14.707H16.561V24H22.677C23.407 24 24 23.407 24 22.675V1.325C24 0.593 23.407 0 22.675 0Z"
+										fill="#FCB72B"
+									/>
+								</svg>
+							</a>
+						</li>
+						<li class="footer__social__item">
+							<a href="#"
+								><svg class="footer__social__icon" width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M24 2.55705C23.117 2.94905 22.168 3.21305 21.172 3.33205C22.189 2.72305 22.97 1.75805 23.337 0.608047C22.386 1.17205 21.332 1.58205 20.21 1.80305C19.313 0.846047 18.032 0.248047 16.616 0.248047C13.437 0.248047 11.101 3.21405 11.819 6.29305C7.728 6.08805 4.1 4.12805 1.671 1.14905C0.381 3.36205 1.002 6.25705 3.194 7.72305C2.388 7.69705 1.628 7.47605 0.965 7.10705C0.911 9.38805 2.546 11.522 4.914 11.997C4.221 12.185 3.462 12.229 2.69 12.081C3.316 14.037 5.134 15.46 7.29 15.5C5.22 17.123 2.612 17.848 0 17.54C2.179 18.937 4.768 19.752 7.548 19.752C16.69 19.752 21.855 12.031 21.543 5.10605C22.505 4.41105 23.34 3.54405 24 2.55705Z"
+										fill="#FCB72B"
+									/>
+								</svg>
+							</a>
+						</li>
+						<li class="footer__social__item">
+							<a href="#"
+								><svg class="footer__social__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M12 0C8.741 0 8.333 0.014 7.053 0.072C2.695 0.272 0.273 2.69 0.073 7.052C0.014 8.333 0 8.741 0 12C0 15.259 0.014 15.668 0.072 16.948C0.272 21.306 2.69 23.728 7.052 23.928C8.333 23.986 8.741 24 12 24C15.259 24 15.668 23.986 16.948 23.928C21.302 23.728 23.73 21.31 23.927 16.948C23.986 15.668 24 15.259 24 12C24 8.741 23.986 8.333 23.928 7.053C23.732 2.699 21.311 0.273 16.949 0.073C15.668 0.014 15.259 0 12 0ZM12 2.163C15.204 2.163 15.584 2.175 16.85 2.233C20.102 2.381 21.621 3.924 21.769 7.152C21.827 8.417 21.838 8.797 21.838 12.001C21.838 15.206 21.826 15.585 21.769 16.85C21.62 20.075 20.105 21.621 16.85 21.769C15.584 21.827 15.206 21.839 12 21.839C8.796 21.839 8.416 21.827 7.151 21.769C3.891 21.62 2.38 20.07 2.232 16.849C2.174 15.584 2.162 15.205 2.162 12C2.162 8.796 2.175 8.417 2.232 7.151C2.381 3.924 3.896 2.38 7.151 2.232C8.417 2.175 8.796 2.163 12 2.163ZM5.838 12C5.838 8.597 8.597 5.838 12 5.838C15.403 5.838 18.162 8.597 18.162 12C18.162 15.404 15.403 18.163 12 18.163C8.597 18.163 5.838 15.403 5.838 12ZM12 16C9.791 16 8 14.21 8 12C8 9.791 9.791 8 12 8C14.209 8 16 9.791 16 12C16 14.21 14.209 16 12 16ZM16.965 5.595C16.965 4.8 17.61 4.155 18.406 4.155C19.201 4.155 19.845 4.8 19.845 5.595C19.845 6.39 19.201 7.035 18.406 7.035C17.61 7.035 16.965 6.39 16.965 5.595Z"
+										fill="#FCB72B"
+									/>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		<script src="/src/scripts/app.js"></script>
+	</body>
+</html>

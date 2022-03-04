@@ -3,18 +3,9 @@
 
 .header {
 	position: relative;
-	background: url("/src/images/mobile/home/mobile-hero.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding-bottom: 20px;
-
-	@include sc-breakpoint(768) {
-		background-image: url("/src/images/tablet/home/tablet-hero.svg");
-	}
-
-	@include sc-breakpoint(1024) {
-		background-image: url("/src/images/desktop/home/hero-desktop.svg");
-	}
 
 	&--darken {
 		background-color: colors.$light-black;
@@ -37,6 +28,10 @@
 
 		@include sc-breakpoint(1024) {
 			padding: 153px 165px;
+		}
+
+		&--title-only {
+			padding: 67px 0;
 		}
 
 		&--darken {

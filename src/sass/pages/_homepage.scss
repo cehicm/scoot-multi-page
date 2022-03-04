@@ -2,6 +2,20 @@
 @import "../variables/breakpoints";
 
 .home {
+	//Header
+	&-header {
+		background-image: url("/src/images/mobile/home/mobile-hero.svg");
+
+		@include sc-breakpoint(768) {
+			background-image: url("/src/images/tablet/home/tablet-hero.svg");
+		}
+
+		@include sc-breakpoint(1024) {
+			background-image: url("/src/images/desktop/home/hero-desktop.svg");
+		}
+	}
+
+	//Sections
 	&__app {
 		position: relative;
 
@@ -116,178 +130,6 @@
 
 		@include sc-breakpoint(1024) {
 			margin: 200px 0;
-		}
-
-		.about {
-			&__wrapper {
-				display: flex;
-				flex-direction: column;
-				gap: 114px;
-				overflow: hidden;
-
-				@include sc-breakpoint(1024) {
-					gap: 160px;
-				}
-			}
-
-			&__item {
-				position: relative;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				text-align: center;
-				padding: 0 20px;
-
-				@include sc-breakpoint(1024) {
-					flex-direction: row-reverse;
-					justify-content: space-between;
-					text-align: left;
-					padding: 0 100px;
-					gap: 40px;
-				}
-
-				@include sc-breakpoint(1080) {
-					gap: 120px;
-				}
-
-				@include sc-breakpoint(1400) {
-					padding: 0 160px;
-					gap: 220px;
-				}
-
-				&__content {
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-					max-width: 350px; //
-
-					@include sc-breakpoint(1024) {
-						align-items: flex-start;
-						max-width: 440px;
-					}
-				}
-
-				&--flip {
-					@include sc-breakpoint(1024) {
-						flex-direction: row;
-					}
-				}
-
-				.half-circle {
-					display: none;
-
-					@include sc-breakpoint(768) {
-						display: block;
-						position: absolute;
-					}
-
-					&--left {
-						@include sc-breakpoint(768) {
-							right: 0;
-						}
-
-						@include sc-breakpoint(1024) {
-							top: auto;
-						}
-					}
-
-					&--right {
-						@include sc-breakpoint(768) {
-							left: 0;
-							top: -10px;
-						}
-					}
-				}
-
-				&__image {
-					&:hover {
-						filter: brightness(0.7);
-					}
-
-					img {
-						border-radius: 50%;
-
-						&__wrapper {
-							position: relative;
-						}
-					}
-				}
-
-				&__arrow {
-					position: absolute;
-					z-index: 2;
-				}
-
-				.arrow {
-					&--telemetry {
-						right: 0;
-						top: 150px;
-						width: 88%;
-
-						img {
-							width: 100%;
-						}
-
-						@include sc-breakpoint(768) {
-							top: 306px;
-							right: 0;
-							bottom: 0;
-						}
-
-						@include sc-breakpoint(1024) {
-							top: initial;
-							width: 550px;
-						}
-					}
-
-					&--near-you {
-						left: 0;
-						top: 0;
-					}
-
-					&--payments {
-						right: 0;
-
-						@include sc-breakpoint(768) {
-							top: 60px;
-						}
-					}
-				}
-
-				&__title {
-					padding-top: 60px;
-					max-width: 300px;
-
-					@include sc-breakpoint(768) {
-						padding-top: 70px;
-					}
-
-					@include sc-breakpoint(1024) {
-						padding-top: 0;
-					}
-
-					@include sc-breakpoint(1200) {
-						width: 500px;
-						max-width: 500px;
-					}
-				}
-
-				&__text {
-					padding: 45px 0 39px 0;
-
-					@include sc-breakpoint(768) {
-						padding: 45px 0 49px 0;
-					}
-
-					@include sc-breakpoint(1024) {
-						padding: 37px 0 47px 0;
-					}
-
-					@include sc-breakpoint(1080) {
-						width: 580px;
-					}
-				}
-			}
 		}
 	}
 }
