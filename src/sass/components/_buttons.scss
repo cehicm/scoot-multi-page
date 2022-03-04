@@ -6,19 +6,17 @@
 }
 
 .button {
-	border: none;
-
 	&--cta {
 		padding: 17px 30px;
 		color: colors.$white;
 		background-color: colors.$yellow-gold;
+		border: 1px solid colors.$yellow-gold;
 		transition: all 0.5s;
 
 		&:hover,
 		&:active {
 			background: none;
 			color: colors.$yellow-gold;
-			border: 1px solid colors.$yellow-gold;
 		}
 	}
 
@@ -26,13 +24,13 @@
 		padding: 14px 43px;
 		background-color: colors.$yellow-gold;
 		color: colors.$white;
+		border: 1px solid colors.$yellow-gold;
 		transition: all 0.5s;
 
 		&:hover,
 		&:active {
 			background: none;
 			color: colors.$yellow-gold;
-			border: 1px solid colors.$yellow-gold;
 		}
 	}
 

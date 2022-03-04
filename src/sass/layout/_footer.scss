@@ -4,12 +4,13 @@
 .footer {
 	text-align: center;
 	background-color: colors.$light-black;
+	overflow: hidden;
 
 	&__title {
 		max-width: 320px;
 
 		@include sc-breakpoint(768) {
-			max-width: 300px;
+			max-width: 450px;
 		}
 	}
 
@@ -34,10 +35,23 @@
 			padding: 62px 179px;
 		}
 
+		@include sc-breakpoint(1024) {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: baseline;
+			text-align: left;
+			padding: 120px 105px 108px 105px;
+		}
+
+		@include sc-breakpoint(1200) {
+			padding: 120px 165px 108px 165px;
+		}
+
 		&__buttons {
 			justify-content: center;
 			gap: 20px;
 			text-align: left;
+			z-index: 2;
 		}
 
 		.footer-bg__img {
@@ -45,18 +59,25 @@
 			bottom: 0;
 
 			&--border {
-				left: 0;
+				left: -200px;
 			}
 
 			&--full {
-				right: 0;
+				right: -30px;
+
+				@include sc-breakpoint(768) {
+				}
 			}
 
 			&--middle {
 				display: none;
 
-				@include sc-breakpoint(768) {
+				@include sc-breakpoint(600) {
 					display: block;
+				}
+
+				@include sc-breakpoint(1024) {
+					left: 35%;
 				}
 			}
 		}
@@ -67,6 +88,11 @@
 			display: flex;
 			align-items: center;
 			justify-content: space-around;
+		}
+
+		@include sc-breakpoint(1024) {
+			justify-content: space-between;
+			padding: 36px 165px;
 		}
 
 		&__menu,
@@ -114,11 +140,12 @@
 			padding: 0;
 		}
 
-		&__icon:hover {
-			transition: filter 0.5s;
+		&__icon > path {
+			transition: fill 0.5s;
 
-			&:hover {
-				filter: contrast(1.7);
+			&:hover,
+			&:active {
+				fill: colors.$light-gray;
 			}
 		}
 	}

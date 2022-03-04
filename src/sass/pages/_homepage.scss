@@ -12,7 +12,8 @@
 				align-items: center;
 				gap: 55px;
 				text-align: center;
-				padding: 80px 20px;
+				padding: 80px 70px;
+				padding-bottom: 0;
 
 				@include sc-breakpoint(768) {
 					text-align: left;
@@ -44,7 +45,7 @@
 
 				@include sc-breakpoint(768) {
 					width: 200px;
-					max-width: 200px;
+					max-width: 262px;
 					height: 96px;
 				}
 
@@ -141,12 +142,12 @@
 					flex-direction: row-reverse;
 					justify-content: space-between;
 					text-align: left;
-					padding: 0 80px;
-					gap: 120px;
+					padding: 0 100px;
+					gap: 40px;
 				}
 
-				@include sc-breakpoint(1200) {
-					padding: 0 100px;
+				@include sc-breakpoint(1080) {
+					gap: 120px;
 				}
 
 				@include sc-breakpoint(1400) {
@@ -158,6 +159,7 @@
 					display: flex;
 					flex-direction: column;
 					align-items: center;
+					max-width: 350px; //
 
 					@include sc-breakpoint(1024) {
 						align-items: flex-start;
@@ -197,11 +199,17 @@
 					}
 				}
 
-				&__image img {
-					border-radius: 50%;
+				&__image {
+					&:hover {
+						filter: brightness(0.7);
+					}
 
-					&__wrapper {
-						position: relative;
+					img {
+						border-radius: 50%;
+
+						&__wrapper {
+							position: relative;
+						}
 					}
 				}
 
@@ -214,6 +222,11 @@
 					&--telemetry {
 						right: 0;
 						top: 150px;
+						width: 88%;
+
+						img {
+							width: 100%;
+						}
 
 						@include sc-breakpoint(768) {
 							top: 306px;
@@ -229,9 +242,7 @@
 
 					&--near-you {
 						left: 0;
-
-						@include sc-breakpoint(768) {
-						}
+						top: 0;
 					}
 
 					&--payments {
@@ -262,14 +273,18 @@
 				}
 
 				&__text {
-					padding: 45px 19.5px 49px 19.5px;
+					padding: 45px 0 39px 0;
 
 					@include sc-breakpoint(768) {
-						padding: 45px 98px 49px 98px;
+						padding: 45px 0 49px 0;
 					}
 
 					@include sc-breakpoint(1024) {
 						padding: 37px 0 47px 0;
+					}
+
+					@include sc-breakpoint(1080) {
+						width: 580px;
 					}
 				}
 			}

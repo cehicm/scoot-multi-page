@@ -76,26 +76,27 @@ body {
   cursor: pointer;
 }
 
-.button {
-  border: none;
-}
 .button--cta {
   padding: 17px 30px;
   color: #ffffff;
   background-color: #fcb72b;
-  transition: transform 0.5s;
+  border: 1px solid #fcb72b;
+  transition: all 0.5s;
 }
-.button--cta:hover {
-  transform: scale(1.1);
+.button--cta:hover, .button--cta:active {
+  background: none;
+  color: #fcb72b;
 }
 .button--learn-more {
   padding: 14px 43px;
   background-color: #fcb72b;
   color: #ffffff;
-  transition: transform 0.5s;
+  border: 1px solid #fcb72b;
+  transition: all 0.5s;
 }
-.button--learn-more:hover {
-  transform: scale(1.1);
+.button--learn-more:hover, .button--learn-more:active {
+  background: none;
+  color: #fcb72b;
 }
 .button--download-app {
   display: grid;
@@ -157,18 +158,14 @@ body {
 .header--darken {
   background-color: #333a44;
   background-blend-mode: darken;
+  height: 100vh;
 }
 .header__content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 120px 20px;
+  padding: 120px 40px;
   text-align: center;
-}
-@media (min-width: 540px) {
-  .header__content {
-    padding: 120px 40px;
-  }
 }
 @media (min-width: 1024px) {
   .header__content {
@@ -274,6 +271,11 @@ body {
 @media (min-width: 1200px) {
   .header__arrow--full {
     right: auto;
+    left: 660px;
+  }
+}
+@media (min-width: 1300px) {
+  .header__arrow--full {
     left: 700px;
   }
 }
@@ -308,7 +310,7 @@ body {
     padding: 20px 165px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .nav__top {
     display: grid;
     grid-auto-flow: column;
@@ -386,6 +388,7 @@ body {
 .footer {
   text-align: center;
   background-color: #333a44;
+  overflow: hidden;
 }
 .footer__title {
   max-width: 320px;
@@ -417,27 +420,47 @@ body {
     padding: 62px 179px;
   }
 }
+@media (min-width: 1024px) {
+  .footer__top {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: left;
+    padding: 120px 105px 108px 105px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__top {
+    padding: 120px 165px 108px 165px;
+  }
+}
 .footer__top__buttons {
   justify-content: center;
   gap: 20px;
   text-align: left;
+  z-index: 2;
 }
 .footer__top .footer-bg__img {
   position: absolute;
   bottom: 0;
 }
 .footer__top .footer-bg__img--border {
-  left: 0;
+  left: -200px;
 }
 .footer__top .footer-bg__img--full {
-  right: 0;
+  right: -30px;
 }
 .footer__top .footer-bg__img--middle {
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .footer__top .footer-bg__img--middle {
     display: block;
+  }
+}
+@media (min-width: 1024px) {
+  .footer__top .footer-bg__img--middle {
+    left: 35%;
   }
 }
 @media (min-width: 768px) {
@@ -445,6 +468,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+  }
+}
+@media (min-width: 1024px) {
+  .footer__bottom {
+    justify-content: space-between;
+    padding: 36px 165px;
   }
 }
 .footer__bottom__menu, .footer__bottom__list {
@@ -490,11 +519,11 @@ body {
     padding: 0;
   }
 }
-.footer__social__icon:hover {
-  transition: filter 0.5s;
+.footer__social__icon > path {
+  transition: fill 0.5s;
 }
-.footer__social__icon:hover:hover {
-  filter: contrast(1.7);
+.footer__social__icon > path:hover, .footer__social__icon > path:active {
+  fill: #e5ecf4;
 }
 
 h1,
@@ -552,6 +581,9 @@ a {
   letter-spacing: 0px;
   color: #e5ecf4;
 }
+.nav__list__item > a:hover {
+  color: #fcb72b;
+}
 @media (min-width: 768px) {
   .nav__list__item > a {
     color: #939caa;
@@ -571,11 +603,13 @@ a {
     letter-spacing: -2.14px;
   }
 }
-.footer .download-btn__text {
-  color: #495567;
+.footer .download-btn__text p {
+  font-family: "Space Mono";
+  font-weight: 600;
   font-size: 9px;
+  color: #495567;
 }
-.footer .download-btn__text span {
+.footer .download-btn__text p span {
   font-size: 17px;
 }
 .footer__menu__item > a {
@@ -585,7 +619,7 @@ a {
   color: #939caa;
 }
 .footer__menu__item > a:hover {
-  text-decoration: underline;
+  color: #fcb72b;
 }
 
 .home__wrapper .app__item__title {
@@ -637,7 +671,8 @@ a {
   align-items: center;
   gap: 55px;
   text-align: center;
-  padding: 80px 20px;
+  padding: 80px 70px;
+  padding-bottom: 0;
 }
 @media (min-width: 768px) {
   .home__app .app__wrapper {
@@ -672,7 +707,7 @@ a {
 @media (min-width: 768px) {
   .home__app .app__image {
     width: 200px;
-    max-width: 200px;
+    max-width: 262px;
     height: 96px;
   }
 }
@@ -772,13 +807,13 @@ a {
     flex-direction: row-reverse;
     justify-content: space-between;
     text-align: left;
-    padding: 0 80px;
-    gap: 120px;
+    padding: 0 100px;
+    gap: 40px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1080px) {
   .home__about .about__item {
-    padding: 0 100px;
+    gap: 120px;
   }
 }
 @media (min-width: 1400px) {
@@ -791,6 +826,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 350px;
 }
 @media (min-width: 1024px) {
   .home__about .about__item__content {
@@ -828,6 +864,9 @@ a {
     top: -10px;
   }
 }
+.home__about .about__item__image:hover {
+  filter: brightness(0.7);
+}
 .home__about .about__item__image img {
   border-radius: 50%;
 }
@@ -841,6 +880,10 @@ a {
 .home__about .about__item .arrow--telemetry {
   right: 0;
   top: 150px;
+  width: 88%;
+}
+.home__about .about__item .arrow--telemetry img {
+  width: 100%;
 }
 @media (min-width: 768px) {
   .home__about .about__item .arrow--telemetry {
@@ -857,6 +900,7 @@ a {
 }
 .home__about .about__item .arrow--near-you {
   left: 0;
+  top: 0;
 }
 .home__about .about__item .arrow--payments {
   right: 0;
@@ -887,15 +931,20 @@ a {
   }
 }
 .home__about .about__item__text {
-  padding: 45px 19.5px 49px 19.5px;
+  padding: 45px 0 39px 0;
 }
 @media (min-width: 768px) {
   .home__about .about__item__text {
-    padding: 45px 98px 49px 98px;
+    padding: 45px 0 49px 0;
   }
 }
 @media (min-width: 1024px) {
   .home__about .about__item__text {
     padding: 37px 0 47px 0;
+  }
+}
+@media (min-width: 1080px) {
+  .home__about .about__item__text {
+    width: 580px;
   }
 }
