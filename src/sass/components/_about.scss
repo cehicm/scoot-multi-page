@@ -2,7 +2,20 @@
 @import "../variables/breakpoints";
 
 .about {
-	&__wrapper {
+	&__only {
+		margin-top: 72px;
+		margin-bottom: 133px;
+
+		// @include sc-breakpoint(768) {
+		// 	margin: 145px 0;
+		// }
+
+		// @include sc-breakpoint(1024) {
+		// 	margin: 200px 0;
+		// }
+	}
+
+	&__section__wrapper {
 		display: flex;
 		flex-direction: column;
 		gap: 114px;

@@ -125,14 +125,18 @@ body {
   display: none;
 }
 
-.about__wrapper {
+.about__only {
+  margin-top: 72px;
+  margin-bottom: 133px;
+}
+.about__section__wrapper {
   display: flex;
   flex-direction: column;
   gap: 114px;
   overflow: hidden;
 }
 @media (min-width: 1024px) {
-  .about__wrapper {
+  .about__section__wrapper {
     gap: 160px;
   }
 }
@@ -798,26 +802,27 @@ a {
   line-height: 25px;
   color: #939caa;
 }
-.home__wrapper .about__item__title {
+
+.button--cta {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.about__item__title {
   font-size: 32px;
   line-height: 32px;
   letter-spacing: -1.43px;
   color: #495567;
 }
 @media (min-width: 1024px) {
-  .home__wrapper .about__item__title {
+  .about__item__title {
     font-size: 48px;
     line-height: 48px;
     letter-spacing: -2.142px;
   }
 }
-.home__wrapper .about__item__text {
+.about__item__text {
   color: #939caa;
-}
-
-.button--cta {
-  font-size: 15px;
-  line-height: 25px;
 }
 
 .home-header {
@@ -952,6 +957,39 @@ a {
 @media (min-width: 1024px) {
   .home__about {
     margin: 200px 0;
+  }
+}
+.home__about .about__item .arrow--telemetry {
+  right: 0;
+  top: 150px;
+  width: 88%;
+}
+.home__about .about__item .arrow--telemetry img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .home__about .about__item .arrow--telemetry {
+    top: 306px;
+    right: 0;
+    bottom: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .home__about .about__item .arrow--telemetry {
+    top: initial;
+    width: 550px;
+  }
+}
+.home__about .about__item .arrow--near-you {
+  left: 0;
+  top: 0;
+}
+.home__about .about__item .arrow--payments {
+  right: 0;
+}
+@media (min-width: 768px) {
+  .home__about .about__item .arrow--payments {
+    top: 60px;
   }
 }
 

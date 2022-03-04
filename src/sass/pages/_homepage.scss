@@ -131,5 +131,45 @@
 		@include sc-breakpoint(1024) {
 			margin: 200px 0;
 		}
+
+		.about {
+			&__item {
+				.arrow {
+					&--telemetry {
+						right: 0;
+						top: 150px;
+						width: 88%;
+
+						img {
+							width: 100%;
+						}
+
+						@include sc-breakpoint(768) {
+							top: 306px;
+							right: 0;
+							bottom: 0;
+						}
+
+						@include sc-breakpoint(1024) {
+							top: initial;
+							width: 550px;
+						}
+					}
+
+					&--near-you {
+						left: 0;
+						top: 0;
+					}
+
+					&--payments {
+						right: 0;
+
+						@include sc-breakpoint(768) {
+							top: 60px;
+						}
+					}
+				}
+			}
+		}
 	}
 }

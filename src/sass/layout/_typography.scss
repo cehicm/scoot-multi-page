@@ -129,29 +129,29 @@ a {
 			color: colors.$text-light-gray;
 		}
 	}
-
-	.about__item {
-		&__title {
-			font-size: 32px;
-			line-height: 32px;
-			letter-spacing: -1.43px;
-			color: colors.$text-dark-gray;
-
-			@include sc-breakpoint(1024) {
-				font-size: 48px;
-				line-height: 48px;
-				letter-spacing: -2.142px;
-			}
-		}
-
-		&__text {
-			color: colors.$text-light-gray;
-		}
-	}
 }
 
 //Components
 .button--cta {
 	font-size: 15px;
 	line-height: 25px;
+}
+
+.about__item {
+	&__title {
+		font-size: 32px;
+		line-height: 32px;
+		letter-spacing: -1.43px;
+		color: colors.$text-dark-gray;
+
+		@include sc-breakpoint(1024) {
+			font-size: 48px;
+			line-height: 48px;
+			letter-spacing: -2.142px;
+		}
+	}
+
+	&__text {
+		color: colors.$text-light-gray;
+	}
 }
