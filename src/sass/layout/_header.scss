@@ -21,8 +21,22 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding: 120px 40px 0 40px;
+		padding: 120px 20px;
 		text-align: center;
+
+		@include sc-breakpoint(540) {
+			padding: 120px 40px;
+		}
+
+		@include sc-breakpoint(1024) {
+			text-align: left;
+			align-items: flex-start;
+			padding-left: 165px;
+		}
+
+		@include sc-breakpoint(1024) {
+			padding: 153px 165px;
+		}
 
 		&--darken {
 			opacity: 0.5;
@@ -31,16 +45,34 @@
 	}
 
 	&__title {
-		max-width: 400px;
+		max-width: 500px;
 	}
 
 	&__text {
 		padding: 33px 0;
 		max-width: 550px;
+
+		@include sc-breakpoint(768) {
+			padding: 43px 0;
+		}
+
+		@include sc-breakpoint(1024) {
+			padding: 54px 0 54px 46px;
+			max-width: 346px;
+		}
+
+		@include sc-breakpoint(1280) {
+			padding: 54px 0 54px 96px;
+			max-width: 405px;
+		}
 	}
 
 	.button--cta {
 		width: 180px;
+
+		@include sc-breakpoint(1024) {
+			margin-left: 96px;
+		}
 	}
 
 	&__circles {
@@ -53,10 +85,22 @@
 			right: 0;
 			bottom: 20px;
 		}
+
+		@include sc-breakpoint(1300) {
+			bottom: auto;
+			top: 65%;
+		}
 	}
 
 	&__arrow {
-		img {
+		position: absolute;
+
+		@include sc-breakpoint(1024) {
+			top: 55%;
+		}
+
+		&--full {
+			bottom: 20px;
 			animation: moveX 2s infinite;
 			animation-direction: alternate;
 
@@ -71,6 +115,30 @@
 
 			@include sc-breakpoint(768) {
 				animation: unset;
+			}
+
+			@include sc-breakpoint(1024) {
+				right: 0;
+			}
+
+			@include sc-breakpoint(1080) {
+				right: 8%;
+			}
+
+			@include sc-breakpoint(1280) {
+				right: 14%;
+			}
+
+			@include sc-breakpoint(1400) {
+				right: 20%;
+			}
+		}
+
+		&--line {
+			display: none;
+
+			@include sc-breakpoint(1024) {
+				display: block;
 			}
 		}
 	}

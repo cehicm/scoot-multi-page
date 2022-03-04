@@ -55,11 +55,14 @@
 				</p>
 				<button class="button button--cta">Get Scootin</button>
 			</div>
-			<picture class="header__arrow">
-				<source class="header__arrow" srcset="/src/images/icons/arrow-pointing-right-long.svg" media="(min-width: 768px)" />
-				<source srcset="/src/images/icons/header-arrow.svg" media="(min-width:320px)" />
+			<picture class="header__arrow header__arrow--full">
+				<source srcset="/src/images/icons/header-arrow-desktop.svg" media="(min-width: 1024px)" />
+				<source class="header__arrow" srcset="/src/images/icons/header-arrow-tablet.svg" media="(min-width: 768px)" />
+				<source srcset="/src/images/icons/header-arrow.svg" media="(min-width: 320px)" />
 				<img alt="Arrow pointing right" src="/src/images/icons/header-arrow.svg" />
 			</picture>
+
+			<img src="/src/images/icons/header-yellow-line.svg" alt="Gold yellow line" class="header__arrow header__arrow--line" />
 
 			<div class="header__circles">
 				<img src="/src/images/icons/header-circle-empty.svg" alt="Circle with white border and transparent background" />
