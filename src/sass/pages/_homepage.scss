@@ -4,6 +4,7 @@
 .home {
 	&__app {
 		position: relative;
+
 		.app {
 			&__wrapper {
 				display: flex;
@@ -16,7 +17,7 @@
 				@include sc-breakpoint(768) {
 					text-align: left;
 					gap: 47px;
-					padding: 120px 50px;
+					padding: 120px 50px 0 50px;
 				}
 			}
 
@@ -77,9 +78,19 @@
 	}
 
 	&__about {
+		@include sc-breakpoint(1024) {
+			margin: 200px 0;
+		}
+
 		.about {
 			&__wrapper {
 				overflow: hidden;
+
+				@include sc-breakpoint(1024) {
+					display: flex;
+					flex-direction: column;
+					gap: 160px;
+				}
 			}
 
 			&__item {
@@ -96,6 +107,7 @@
 					text-align: left;
 					padding: 0 100px;
 					gap: 120px;
+					// margin-top: 160px;
 				}
 
 				@include sc-breakpoint(1400) {
@@ -161,10 +173,11 @@
 
 				.arrow {
 					&--telemetry {
+						right: 0;
 						top: 150px;
 
 						@include sc-breakpoint(768) {
-							top: 200px;
+							top: 306px;
 							right: 0;
 						}
 
@@ -180,19 +193,32 @@
 					}
 
 					&--near-you {
+						left: 0;
+
 						@include sc-breakpoint(768) {
-							left: 0;
 						}
 					}
 
 					&--payments {
 						right: 0;
+
+						@include sc-breakpoint(768) {
+							top: 60px;
+						}
 					}
 				}
 
 				&__title {
 					padding-top: 60px;
 					max-width: 300px;
+
+					@include sc-breakpoint(768) {
+						padding-top: 70px;
+					}
+
+					@include sc-breakpoint(1024) {
+						padding-top: 0;
+					}
 				}
 
 				&__text {
@@ -203,12 +229,16 @@
 					}
 
 					@include sc-breakpoint(1024) {
-						padding: 37px 0 57px 0;
+						padding: 37px 0 47px 0;
 					}
 				}
 
 				.button--learn-more {
 					margin-bottom: 114px;
+
+					@include sc-breakpoint(1024) {
+						margin-bottom: 0;
+					}
 				}
 			}
 		}
