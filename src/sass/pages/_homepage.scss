@@ -78,17 +78,24 @@
 	}
 
 	&__about {
+		margin: 127px 0;
+
+		@include sc-breakpoint(768) {
+			margin: 145px 0;
+		}
+
 		@include sc-breakpoint(1024) {
 			margin: 200px 0;
 		}
 
 		.about {
 			&__wrapper {
+				display: flex;
+				flex-direction: column;
+				gap: 114px;
 				overflow: hidden;
 
 				@include sc-breakpoint(1024) {
-					display: flex;
-					flex-direction: column;
 					gap: 160px;
 				}
 			}
@@ -107,7 +114,6 @@
 					text-align: left;
 					padding: 0 100px;
 					gap: 120px;
-					// margin-top: 160px;
 				}
 
 				@include sc-breakpoint(1400) {
@@ -218,6 +224,7 @@
 
 					@include sc-breakpoint(1024) {
 						padding-top: 0;
+						max-width: 450px;
 					}
 				}
 
@@ -230,14 +237,6 @@
 
 					@include sc-breakpoint(1024) {
 						padding: 37px 0 47px 0;
-					}
-				}
-
-				.button--learn-more {
-					margin-bottom: 114px;
-
-					@include sc-breakpoint(1024) {
-						margin-bottom: 0;
 					}
 				}
 			}

@@ -10,6 +10,14 @@
 		justify-content: space-between;
 		align-items: center;
 		padding: 20px 38px 20px 41px;
+
+		@include sc-breakpoint(1024) {
+			padding: 20px 95px;
+		}
+
+		@include sc-breakpoint(1280) {
+			padding: 20px 165px;
+		}
 	}
 
 	&__top {
