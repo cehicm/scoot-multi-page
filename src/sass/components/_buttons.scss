@@ -12,10 +12,13 @@
 		padding: 17px 30px;
 		color: colors.$white;
 		background-color: colors.$yellow-gold;
-		transition: transform 0.5s;
+		transition: all 0.5s;
 
-		&:hover {
-			transform: scale(1.1);
+		&:hover,
+		&:active {
+			background: none;
+			color: colors.$yellow-gold;
+			border: 1px solid colors.$yellow-gold;
 		}
 	}
 
@@ -23,10 +26,13 @@
 		padding: 14px 43px;
 		background-color: colors.$yellow-gold;
 		color: colors.$white;
-		transition: transform 0.5s;
+		transition: all 0.5s;
 
-		&:hover {
-			transform: scale(1.1);
+		&:hover,
+		&:active {
+			background: none;
+			color: colors.$yellow-gold;
+			border: 1px solid colors.$yellow-gold;
 		}
 	}
 

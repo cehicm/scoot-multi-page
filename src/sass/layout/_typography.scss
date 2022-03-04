@@ -59,6 +59,10 @@ a {
 	letter-spacing: 0px;
 	color: colors.$light-gray;
 
+	&:hover {
+		color: colors.$yellow-gold;
+	}
+
 	@include sc-breakpoint(768) {
 		color: colors.$text-light-gray;
 	}
@@ -94,7 +98,7 @@ a {
 		color: colors.$text-light-gray;
 
 		&:hover {
-			text-decoration: underline;
+			color: colors.$yellow-gold;
 		}
 	}
 }
