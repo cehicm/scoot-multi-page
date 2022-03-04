@@ -38,10 +38,17 @@ a {
 //Header
 .header {
 	color: colors.$white;
+
 	&__title {
 		font-size: 40px;
 		line-height: 40px;
-		letter-spacing: -1.7857142686843872px;
+		letter-spacing: -1.78px;
+
+		@include sc-breakpoint(768) {
+			font-size: 56px;
+			line-height: 56px;
+			letter-spacing: -2.5px;
+		}
 	}
 }
 
@@ -62,8 +69,14 @@ a {
 	&__title {
 		font-size: 32px;
 		line-height: 32px;
-		letter-spacing: -1.4285714626312256px;
+		letter-spacing: -1.43px;
 		color: colors.$white;
+
+		@include sc-breakpoint(768) {
+			font-size: 48px;
+			line-height: 48px;
+			letter-spacing: -2.14px;
+		}
 	}
 
 	.download-btn__text {
@@ -93,8 +106,14 @@ a {
 		&__title {
 			font-size: 20px;
 			line-height: 28px;
-			letter-spacing: -0.8928571343421936px;
+			letter-spacing: -0.89px;
 			color: colors.$text-dark-gray;
+
+			@include sc-breakpoint(768) {
+				font-size: 24px;
+				line-height: 28px;
+				letter-spacing: -1.07px;
+			}
 		}
 
 		&__text {
@@ -108,8 +127,14 @@ a {
 		&__title {
 			font-size: 32px;
 			line-height: 32px;
-			letter-spacing: -1.4285714626312256px;
+			letter-spacing: -1.43px;
 			color: colors.$text-dark-gray;
+
+			@include sc-breakpoint(1024) {
+				font-size: 48px;
+				line-height: 48px;
+				letter-spacing: -2.142px;
+			}
 		}
 
 		&__text {
