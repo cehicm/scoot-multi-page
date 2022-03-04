@@ -44,6 +44,7 @@
 
 				@include sc-breakpoint(768) {
 					width: 200px;
+					max-width: 200px;
 					height: 96px;
 				}
 
@@ -140,8 +141,12 @@
 					flex-direction: row-reverse;
 					justify-content: space-between;
 					text-align: left;
-					padding: 0 100px;
+					padding: 0 80px;
 					gap: 120px;
+				}
+
+				@include sc-breakpoint(1200) {
+					padding: 0 100px;
 				}
 
 				@include sc-breakpoint(1400) {
@@ -213,16 +218,12 @@
 						@include sc-breakpoint(768) {
 							top: 306px;
 							right: 0;
+							bottom: 0;
 						}
 
 						@include sc-breakpoint(1024) {
 							top: initial;
-							bottom: 120px;
 							width: 550px;
-						}
-
-						@include sc-breakpoint(1400) {
-							bottom: 0;
 						}
 					}
 
@@ -252,7 +253,11 @@
 
 					@include sc-breakpoint(1024) {
 						padding-top: 0;
-						max-width: 450px;
+					}
+
+					@include sc-breakpoint(1200) {
+						width: 500px;
+						max-width: 500px;
 					}
 				}
 
