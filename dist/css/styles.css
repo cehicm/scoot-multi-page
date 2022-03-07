@@ -76,16 +76,27 @@ body {
   cursor: pointer;
 }
 
-.button--cta {
-  padding: 17px 30px;
+.button--cta, .button--apply, .button--message-us {
   color: #ffffff;
   background-color: #fcb72b;
   border: 1px solid #fcb72b;
   transition: all 0.5s;
 }
-.button--cta:hover, .button--cta:active {
+.button--cta:hover, .button--cta:active, .button--apply:hover, .button--apply:active, .button--message-us:hover, .button--message-us:active {
   background: none;
   color: #fcb72b;
+}
+.button--cta {
+  padding: 17px 30px;
+}
+.button--apply {
+  padding: 20px 68px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .button--apply {
+    width: initial;
+  }
 }
 .button--learn-more {
   padding: 14px 43px;
@@ -119,6 +130,9 @@ body {
 }
 .button--download-app:hover {
   filter: invert(1);
+}
+.button--message-us {
+  padding: 14px 44px;
 }
 
 .icon--close {
@@ -433,6 +447,19 @@ body {
   display: block;
 }
 
+.positions__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px;
+  margin-bottom: 16px;
+  background-color: #f2f5f9;
+}
+.positions__item__location {
+  padding-top: 17px;
+  padding-bottom: 23px;
+}
+
 .display-none {
   display: none;
 }
@@ -449,28 +476,33 @@ body {
 .about__item,
 .home__app,
 .values,
-.faq {
+.faq,
+.positions {
   padding: 0 32px;
 }
 @media (min-width: 768px) {
   .about__item,
 .home__app,
 .values,
-.faq {
+.faq,
+.positions {
     padding: 0 100px;
   }
 }
 
-.about__wrapper {
+.about,
+.careers {
   margin-top: 72px;
 }
 @media (min-width: 768px) {
-  .about__wrapper {
+  .about,
+.careers {
     margin-top: 144px;
   }
 }
 @media (min-width: 1024px) {
-  .about__wrapper {
+  .about,
+.careers {
     margin-top: 120px;
   }
 }
@@ -890,7 +922,8 @@ h2,
 h3,
 h4,
 a,
-button {
+button,
+.button--apply {
   font-family: "Space Mono";
   font-weight: 700;
   margin: 0;
@@ -937,7 +970,8 @@ a {
 .values__item__text,
 .app__item__text,
 .button--cta,
-.faq__item__answer {
+.faq__item__answer,
+.positions__item__text {
   font-size: 15px;
   line-height: 25px;
   letter-spacing: 0px;
@@ -952,7 +986,8 @@ a {
 }
 
 .nav__list__item > a,
-.faq__item__question {
+.faq__item__question,
+.positions__item__title {
   font-size: 18px;
   line-height: 25px;
 }

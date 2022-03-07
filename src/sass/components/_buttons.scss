@@ -6,8 +6,9 @@
 }
 
 .button {
-	&--cta {
-		padding: 17px 30px;
+	&--cta,
+	&--apply,
+	&--message-us {
 		color: colors.$white;
 		background-color: colors.$yellow-gold;
 		border: 1px solid colors.$yellow-gold;
@@ -17,6 +18,19 @@
 		&:active {
 			background: none;
 			color: colors.$yellow-gold;
+		}
+	}
+
+	&--cta {
+		padding: 17px 30px;
+	}
+
+	&--apply {
+		padding: 20px 68px;
+		width: 100%;
+
+		@include sc-breakpoint(768) {
+			width: initial;
 		}
 	}
 
@@ -59,6 +73,10 @@
 		&:hover {
 			filter: invert(1);
 		}
+	}
+
+	&--message-us {
+		padding: 14px 44px;
 	}
 }
 

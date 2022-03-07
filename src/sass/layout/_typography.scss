@@ -6,7 +6,8 @@ h2,
 h3,
 h4,
 a,
-button {
+button,
+.button--apply {
 	font-family: "Space Mono";
 	font-weight: 700;
 	margin: 0;
@@ -50,7 +51,8 @@ a {
 .values__item__text,
 .app__item__text,
 .button--cta,
-.faq__item__answer {
+.faq__item__answer,
+.positions__item__text {
 	font-size: 15px;
 	line-height: 25px;
 	letter-spacing: 0px;
@@ -65,7 +67,8 @@ a {
 }
 
 .nav__list__item > a,
-.faq__item__question {
+.faq__item__question,
+.positions__item__title {
 	font-size: 18px;
 	line-height: 25px;
 }

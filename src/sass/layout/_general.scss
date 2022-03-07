@@ -17,7 +17,8 @@
 .about__item,
 .home__app,
 .values,
-.faq {
+.faq,
+.positions {
 	padding: 0 32px;
 
 	@include sc-breakpoint(768) {
@@ -25,7 +26,8 @@
 	}
 }
 
-.about__wrapper {
+.about,
+.careers {
 	margin-top: 72px;
 
 	@include sc-breakpoint(768) {
