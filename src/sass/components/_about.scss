@@ -160,6 +160,7 @@
 
 			@include sc-breakpoint(1024) {
 				padding-top: 0;
+				max-width: 450px;
 			}
 
 			@include sc-breakpoint(1200) {
@@ -177,6 +178,7 @@
 
 			@include sc-breakpoint(1024) {
 				padding: 37px 0 47px 0;
+				max-width: 440px;
 			}
 
 			@include sc-breakpoint(1080) {
