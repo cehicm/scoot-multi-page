@@ -2,27 +2,26 @@
 @import "../variables/breakpoints";
 
 .about {
-	&__only {
-		margin-top: 72px;
-		margin-bottom: 133px;
-
-		// @include sc-breakpoint(768) {
-		// 	margin: 145px 0;
-		// }
-
-		// @include sc-breakpoint(1024) {
-		// 	margin: 200px 0;
-		// }
-	}
-
-	&__section__wrapper {
+	&__section {
 		display: flex;
 		flex-direction: column;
 		gap: 114px;
 		overflow: hidden;
 
+		&--only {
+			margin-bottom: 133px;
+		}
+
 		@include sc-breakpoint(1024) {
 			gap: 160px;
+		}
+
+		&__only {
+			margin-top: 72px;
+
+			@include sc-breakpoint(768) {
+				margin-top: 150px;
+			}
 		}
 	}
 
@@ -31,14 +30,12 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		justify-content: center;
 		text-align: center;
-		padding: 0 20px;
 
 		@include sc-breakpoint(1024) {
 			flex-direction: row-reverse;
-			justify-content: space-between;
 			text-align: left;
-			padding: 0 100px;
 			gap: 40px;
 		}
 
@@ -47,7 +44,6 @@
 		}
 
 		@include sc-breakpoint(1400) {
-			padding: 0 160px;
 			gap: 220px;
 		}
 
@@ -55,11 +51,15 @@
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			max-width: 350px; //
+			max-width: 350px;
+
+			@include sc-breakpoint(768) {
+				max-width: 580px;
+			}
 
 			@include sc-breakpoint(1024) {
 				align-items: flex-start;
-				max-width: 440px;
+				max-width: 445px;
 			}
 		}
 
@@ -71,6 +71,7 @@
 
 		.half-circle {
 			display: none;
+			z-index: -1;
 
 			@include sc-breakpoint(768) {
 				display: block;
@@ -79,11 +80,8 @@
 
 			&--left {
 				@include sc-breakpoint(768) {
+					top: 0;
 					right: 0;
-				}
-
-				@include sc-breakpoint(1024) {
-					top: auto;
 				}
 			}
 
@@ -102,6 +100,8 @@
 
 			img {
 				border-radius: 50%;
+				width: 100%;
+				z-index: 2;
 
 				&__wrapper {
 					position: relative;
@@ -115,16 +115,14 @@
 		}
 
 		.arrow {
-			&--telemetry {
+			&--telemetry,
+			&--mission {
 				right: 0;
 				top: 150px;
-				width: 88%;
-
-				img {
-					width: 100%;
-				}
+				width: 95%;
 
 				@include sc-breakpoint(768) {
+					width: 1120px;
 					top: 306px;
 					right: 0;
 					bottom: 0;
@@ -132,20 +130,11 @@
 
 				@include sc-breakpoint(1024) {
 					top: initial;
-					width: 550px;
+					width: 800px;
 				}
-			}
 
-			&--near-you {
-				left: 0;
-				top: 0;
-			}
-
-			&--payments {
-				right: 0;
-
-				@include sc-breakpoint(768) {
-					top: 60px;
+				@include sc-breakpoint(1400) {
+					width: 1100px;
 				}
 			}
 		}
@@ -156,15 +145,14 @@
 
 			@include sc-breakpoint(768) {
 				padding-top: 70px;
+				max-width: 450px;
 			}
 
 			@include sc-breakpoint(1024) {
 				padding-top: 0;
-				max-width: 450px;
 			}
 
 			@include sc-breakpoint(1200) {
-				width: 500px;
 				max-width: 500px;
 			}
 		}
