@@ -173,6 +173,7 @@ body {
   .about__item {
     flex-direction: row-reverse;
     text-align: left;
+    justify-content: space-between;
     gap: 40px;
   }
 }
@@ -183,6 +184,8 @@ body {
 }
 @media (min-width: 1400px) {
   .about__item {
+    max-width: 1400px;
+    margin: 0 auto;
     gap: 220px;
   }
 }
@@ -506,15 +509,6 @@ body {
     padding: 0 100px;
   }
 }
-@media (min-width: 1024px) {
-  .about__item,
-.home__app,
-.values,
-.faq,
-.positions {
-    padding: 0 55px;
-  }
-}
 @media (min-width: 1400px) {
   .about__item,
 .home__app,
@@ -584,7 +578,7 @@ body {
 }
 @media (min-width: 1024px) {
   .header__content--title-only {
-    padding: 72px 0 72px 160px;
+    padding: 72px 0 72px 165px;
     align-items: flex-start;
   }
 }
