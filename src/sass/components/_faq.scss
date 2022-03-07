@@ -1,0 +1,50 @@
+@use "../variables/colors" as colors;
+@import "../variables/breakpoints";
+
+.faq {
+	text-align: center;
+
+	&__fraction {
+		&__title {
+			padding-top: 52px;
+			padding-bottom: 37px;
+		}
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		padding: 32px;
+		margin-bottom: 0;
+		text-align: left;
+		background-color: colors.$white-gray;
+
+		&__wrapper {
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+		}
+
+		&__answer {
+			display: none;
+			max-width: 96%;
+		}
+	}
+
+	.question {
+		&__wrapper {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+}
+
+.rotate-faq-arrow {
+	transform: rotate(180deg);
+}
+
+.answer--open {
+	display: block;
+}

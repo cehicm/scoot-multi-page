@@ -336,6 +336,45 @@ body {
   background-color: #fcb72b;
 }
 
+.faq {
+  text-align: center;
+}
+.faq__fraction__title {
+  padding-top: 52px;
+  padding-bottom: 37px;
+}
+.faq__item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px;
+  margin-bottom: 0;
+  text-align: left;
+  background-color: #f2f5f9;
+}
+.faq__item__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.faq__item__answer {
+  display: none;
+  max-width: 96%;
+}
+.faq .question__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rotate-faq-arrow {
+  transform: rotate(180deg);
+}
+
+.answer--open {
+  display: block;
+}
+
 .display-none {
   display: none;
 }
@@ -351,13 +390,15 @@ body {
 
 .about__item,
 .home__app,
-.values {
+.values,
+.faq {
   padding: 0 32px;
 }
 @media (min-width: 768px) {
   .about__item,
 .home__app,
-.values {
+.values,
+.faq {
     padding: 0 100px;
   }
 }
@@ -605,6 +646,17 @@ body {
   text-align: center;
   background-color: #333a44;
   overflow: hidden;
+  margin-top: 127px;
+}
+@media (min-width: 768px) {
+  .footer {
+    margin-top: 145px;
+  }
+}
+@media (min-width: 1024px) {
+  .footer {
+    margin-top: 200px;
+  }
 }
 .footer__title {
   max-width: 320px;
@@ -745,6 +797,7 @@ body {
 h1,
 h2,
 h3,
+h4,
 a,
 button {
   font-family: "Space Mono";
@@ -768,11 +821,49 @@ a {
   text-decoration: none;
 }
 
+.about__item__title,
+.values__title,
+.faq__title,
+.footer__title {
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: -1.43px;
+}
+@media (min-width: 768px) {
+  .about__item__title,
+.values__title,
+.faq__title,
+.footer__title {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14px;
+  }
+}
+
 .header__text,
-.about__item__text {
+.about__item__text,
+.footer__menu__item > a,
+.values__item__text,
+.app__item__text,
+.button--cta,
+.faq__item__answer {
   font-size: 15px;
   line-height: 25px;
   letter-spacing: 0px;
+}
+
+.faq__fraction__title,
+.values__item__number,
+.values__item__title {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07px;
+}
+
+.nav__list__item > a,
+.faq__item__question {
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .header {
@@ -792,8 +883,6 @@ a {
 }
 
 .nav__list__item > a {
-  font-size: 18px;
-  line-height: 25px;
   letter-spacing: 0px;
   color: #e5ecf4;
 }
@@ -807,17 +896,7 @@ a {
 }
 
 .footer__title {
-  font-size: 32px;
-  line-height: 32px;
-  letter-spacing: -1.43px;
   color: #ffffff;
-}
-@media (min-width: 768px) {
-  .footer__title {
-    font-size: 48px;
-    line-height: 48px;
-    letter-spacing: -2.14px;
-  }
 }
 .footer .download-btn__text p {
   font-family: "Space Mono";
@@ -828,10 +907,13 @@ a {
 .footer .download-btn__text p span {
   font-size: 17px;
 }
+@media (min-width: 768px) {
+  .footer .download-btn__text p span {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
 .footer__menu__item > a {
-  font-size: 15px;
-  line-height: 25px;
-  letter-spacing: 0px;
   color: #939caa;
 }
 .footer__menu__item > a:hover {
@@ -852,31 +934,35 @@ a {
   }
 }
 .home__wrapper .app__item__text {
-  font-size: 15px;
-  line-height: 25px;
   color: #939caa;
-}
-
-.button--cta {
-  font-size: 15px;
-  line-height: 25px;
 }
 
 .about__item__title {
-  font-size: 32px;
-  line-height: 32px;
-  letter-spacing: -1.43px;
   color: #495567;
-}
-@media (min-width: 1024px) {
-  .about__item__title {
-    font-size: 48px;
-    line-height: 48px;
-    letter-spacing: -2.142px;
-  }
 }
 .about__item__text {
   color: #939caa;
+}
+
+.values__item__text {
+  color: #939caa;
+}
+
+.faq {
+  color: #495567;
+}
+@media (min-width: 768px) {
+  .faq__fraction__title {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1.78px;
+  }
+}
+@media (min-width: 768px) {
+  .faq__item__question {
+    font-size: 24px;
+    line-height: 28px;
+  }
 }
 
 .home-header {

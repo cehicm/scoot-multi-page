@@ -16,7 +16,8 @@
 
 .about__item,
 .home__app,
-.values {
+.values,
+.faq {
 	padding: 0 32px;
 
 	@include sc-breakpoint(768) {
