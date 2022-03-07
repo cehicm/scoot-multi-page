@@ -26,13 +26,12 @@
 				align-items: center;
 				gap: 55px;
 				text-align: center;
-				padding: 80px 70px;
 				padding-bottom: 0;
 
 				@include sc-breakpoint(768) {
 					text-align: left;
 					gap: 47px;
-					padding: 122px 125px 0 102px;
+					padding-top: 122px;
 				}
 
 				@include sc-breakpoint(1024) {
@@ -40,11 +39,6 @@
 					flex-direction: row;
 					align-items: flex-start;
 					justify-content: space-between;
-					padding: 122px 0 0 102px;
-				}
-
-				@include sc-breakpoint(1400) {
-					padding: 122px 0 0 165px;
 				}
 			}
 
@@ -58,8 +52,8 @@
 				border-radius: 50%;
 
 				@include sc-breakpoint(768) {
-					width: 200px;
-					max-width: 262px;
+					width: 250px;
+					max-width: 250px;
 					height: 96px;
 				}
 
@@ -122,51 +116,39 @@
 	}
 
 	&__about {
-		margin: 127px 0;
+		margin-top: 127px;
 
 		@include sc-breakpoint(768) {
-			margin: 145px 0;
+			margin-top: 145px;
 		}
 
 		@include sc-breakpoint(1024) {
-			margin: 200px 0;
+			margin-top: 200px;
 		}
 
 		.about {
 			&__item {
 				.arrow {
-					&--telemetry {
-						right: 0;
-						top: 150px;
-						width: 88%;
-
-						img {
-							width: 100%;
-						}
-
-						@include sc-breakpoint(768) {
-							top: 306px;
-							right: 0;
-							bottom: 0;
-						}
-
-						@include sc-breakpoint(1024) {
-							top: initial;
-							width: 550px;
-						}
-					}
-
 					&--near-you {
 						left: 0;
 						top: 0;
+
+						@include sc-breakpoint(768) {
+							width: 450px;
+						}
 					}
 
 					&--payments {
 						right: 0;
-						top: 0;
+						width: 50%;
+						top: 40px;
 
 						@include sc-breakpoint(768) {
 							top: 60px;
+						}
+
+						@include sc-breakpoint(1400) {
+							width: 400px;
 						}
 					}
 				}
