@@ -31,4 +31,8 @@
 	@include sc-breakpoint(768) {
 		margin-top: 144px;
 	}
+
+	@include sc-breakpoint(1024) {
+		margin-top: 120px;
+	}
 }

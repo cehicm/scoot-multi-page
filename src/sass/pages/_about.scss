@@ -25,6 +25,18 @@
 			top: 262px;
 			width: 1120px;
 		}
+
+		@include sc-breakpoint(1024) {
+			width: 720px;
+		}
+
+		@include sc-breakpoint(1200) {
+			width: 1000px;
+		}
+
+		@include sc-breakpoint(1300) {
+			width: 1120px;
+		}
 	}
 
 	&--urban-living {
@@ -34,6 +46,10 @@
 
 		@include sc-breakpoint(768) {
 			width: 400px;
+		}
+
+		@include sc-breakpoint(1024) {
+			top: 0;
 		}
 	}
 }

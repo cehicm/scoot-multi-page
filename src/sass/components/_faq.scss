@@ -5,6 +5,13 @@
 	text-align: center;
 
 	&__fraction {
+		@include sc-breakpoint(1024) {
+			display: flex;
+			justify-content: space-between;
+			gap: 47px;
+			text-align: left;
+		}
+
 		&__title {
 			padding-top: 52px;
 			padding-bottom: 37px;
@@ -16,9 +23,24 @@
 		flex-direction: column;
 		gap: 16px;
 		padding: 32px;
+
 		margin-bottom: 0;
 		text-align: left;
 		background-color: colors.$white-gray;
+
+		@include sc-breakpoint(1024) {
+			width: 550px;
+			padding: 37px 40px;
+
+			&:hover {
+				background-color: colors.$light-yellow;
+				cursor: pointer;
+			}
+		}
+
+		@include sc-breakpoint(1400) {
+			width: 660px;
+		}
 
 		&__wrapper {
 			display: flex;
@@ -27,6 +49,10 @@
 
 			@include sc-breakpoint(768) {
 				gap: 24px;
+			}
+
+			@include sc-breakpoint(1024) {
+				margin-top: 66px;
 			}
 		}
 
