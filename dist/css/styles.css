@@ -480,6 +480,24 @@ body {
   padding-bottom: 23px;
 }
 
+.locations__map {
+  position: relative;
+  margin-bottom: 80px;
+  background-image: url("/src/images/mobile/location/world-map-mobile.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media (min-width: 768px) {
+  .locations__map {
+    background-image: url("/src/images/tablet/location/world-map-tablet.png");
+  }
+}
+@media (min-width: 1024px) {
+  .locations__map {
+    background-image: url("/src/images/desktop/location/world-map-desktop.png");
+  }
+}
+
 .display-none {
   display: none;
 }
@@ -497,7 +515,8 @@ body {
 .home__app,
 .values,
 .faq,
-.positions {
+.positions,
+.locations {
   padding: 0 32px;
 }
 @media (min-width: 768px) {
@@ -505,7 +524,8 @@ body {
 .home__app,
 .values,
 .faq,
-.positions {
+.positions,
+.locations {
     padding: 0 100px;
   }
 }
@@ -514,24 +534,28 @@ body {
 .home__app,
 .values,
 .faq,
-.positions {
+.positions,
+.locations {
     padding: 0 165px;
   }
 }
 
 .about,
-.careers {
+.careers,
+.locations {
   margin-top: 72px;
 }
 @media (min-width: 768px) {
   .about,
-.careers {
+.careers,
+.locations {
     margin-top: 144px;
   }
 }
 @media (min-width: 1024px) {
   .about,
-.careers {
+.careers,
+.locations {
     margin-top: 120px;
   }
 }

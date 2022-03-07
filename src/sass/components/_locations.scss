@@ -1,0 +1,20 @@
+@use "../variables/colors" as colors;
+@import "../variables/breakpoints";
+
+.locations {
+	&__map {
+		position: relative;
+		margin-bottom: 80px;
+		background-image: url("/src/images/mobile/location/world-map-mobile.png");
+		background-repeat: no-repeat;
+		background-size: contain;
+
+		@include sc-breakpoint(768) {
+			background-image: url("/src/images/tablet/location/world-map-tablet.png");
+		}
+
+		@include sc-breakpoint(1024) {
+			background-image: url("/src/images/desktop/location/world-map-desktop.png");
+		}
+	}
+}
