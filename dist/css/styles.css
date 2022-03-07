@@ -356,6 +356,11 @@ body {
     padding-top: 98px;
   }
 }
+@media (min-width: 1024px) {
+  .values__item__text {
+    max-width: 350px;
+  }
+}
 .values__number__wrapper {
   position: absolute;
   height: 96px;
@@ -455,6 +460,12 @@ body {
   margin-bottom: 16px;
   background-color: #f2f5f9;
 }
+@media (min-width: 768px) {
+  .positions__item {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 .positions__item__location {
   padding-top: 17px;
   padding-bottom: 23px;
@@ -487,6 +498,24 @@ body {
 .faq,
 .positions {
     padding: 0 100px;
+  }
+}
+@media (min-width: 1024px) {
+  .about__item,
+.home__app,
+.values,
+.faq,
+.positions {
+    padding: 0 55px;
+  }
+}
+@media (min-width: 1400px) {
+  .about__item,
+.home__app,
+.values,
+.faq,
+.positions {
+    padding: 0 165px;
   }
 }
 

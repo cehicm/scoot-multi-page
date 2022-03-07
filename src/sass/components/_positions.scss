@@ -10,6 +10,11 @@
 		margin-bottom: 16px;
 		background-color: colors.$white-gray;
 
+		@include sc-breakpoint(768) {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
 		&__location {
 			padding-top: 17px;
 			padding-bottom: 23px;
