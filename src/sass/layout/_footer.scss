@@ -5,6 +5,15 @@
 	text-align: center;
 	background-color: colors.$light-black;
 	overflow: hidden;
+	margin-top: 127px;
+
+	@include sc-breakpoint(768) {
+		margin-top: 145px;
+	}
+
+	@include sc-breakpoint(1024) {
+		margin-top: 200px;
+	}
 
 	&__title {
 		max-width: 320px;
