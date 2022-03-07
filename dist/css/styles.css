@@ -452,6 +452,12 @@ body {
   display: block;
 }
 
+@media (min-width: 1400px) {
+  .positions {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
 .positions__item {
   display: flex;
   flex-direction: column;
