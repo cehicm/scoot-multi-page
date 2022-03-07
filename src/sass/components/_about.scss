@@ -5,11 +5,11 @@
 	&__section {
 		display: flex;
 		flex-direction: column;
-		gap: 114px;
+		gap: 120px;
 		overflow: hidden;
 
 		&--only {
-			margin-bottom: 133px;
+			margin-bottom: 137px;
 		}
 
 		@include sc-breakpoint(1024) {

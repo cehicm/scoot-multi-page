@@ -20,11 +20,20 @@
 		top: 100px;
 		right: 0;
 		width: 95%;
+
+		@include sc-breakpoint(768) {
+			top: 262px;
+			width: 1120px;
+		}
 	}
 
 	&--urban-living {
 		top: 0;
 		left: 0;
 		width: 95%;
+
+		@include sc-breakpoint(768) {
+			width: 400px;
+		}
 	}
 }

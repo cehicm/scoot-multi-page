@@ -24,6 +24,10 @@
 			display: flex;
 			flex-direction: column;
 			gap: 16px;
+
+			@include sc-breakpoint(768) {
+				gap: 24px;
+			}
 		}
 
 		&__answer {
@@ -36,7 +40,11 @@
 		&__wrapper {
 			display: flex;
 			align-items: center;
-			justify-content: space-between;
+			gap: 20px;
+
+			@include sc-breakpoint(768) {
+				justify-content: space-between;
+			}
 		}
 	}
 }

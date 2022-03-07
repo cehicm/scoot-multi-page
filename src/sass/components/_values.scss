@@ -2,9 +2,12 @@
 @import "../variables/breakpoints";
 
 .values {
-	margin-top: 96px;
 	margin-bottom: 151px;
 	text-align: center;
+
+	@include sc-breakpoint(768) {
+		margin-bottom: 120px;
+	}
 
 	&__wrapper {
 		display: flex;
@@ -23,6 +26,10 @@
 		align-items: center;
 		padding-top: 62px;
 
+		@include sc-breakpoint(768) {
+			padding-top: 111px;
+		}
+
 		&__image > img {
 			border-radius: 50%;
 		}
@@ -30,6 +37,10 @@
 		&__title {
 			padding-top: 79px;
 			padding-bottom: 32px;
+
+			@include sc-breakpoint(768) {
+				padding-top: 98px;
+			}
 		}
 	}
 
@@ -38,8 +49,8 @@
 		height: 96px;
 		width: 96px;
 		left: 50%;
-		bottom: 0;
 		transform: translate(-50%, 50%);
+		bottom: 0;
 		display: flex;
 		align-items: center;
 		justify-content: center;

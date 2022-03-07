@@ -24,3 +24,11 @@
 		padding: 0 100px;
 	}
 }
+
+.about__wrapper {
+	margin-top: 72px;
+
+	@include sc-breakpoint(768) {
+		margin-top: 144px;
+	}
+}

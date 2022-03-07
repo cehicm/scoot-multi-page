@@ -128,11 +128,11 @@ body {
 .about__section {
   display: flex;
   flex-direction: column;
-  gap: 114px;
+  gap: 120px;
   overflow: hidden;
 }
 .about__section--only {
-  margin-bottom: 133px;
+  margin-bottom: 137px;
 }
 @media (min-width: 1024px) {
   .about__section {
@@ -296,9 +296,13 @@ body {
 }
 
 .values {
-  margin-top: 96px;
   margin-bottom: 151px;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .values {
+    margin-bottom: 120px;
+  }
 }
 .values__wrapper {
   display: flex;
@@ -315,6 +319,11 @@ body {
   align-items: center;
   padding-top: 62px;
 }
+@media (min-width: 768px) {
+  .values__item {
+    padding-top: 111px;
+  }
+}
 .values__item__image > img {
   border-radius: 50%;
 }
@@ -322,13 +331,18 @@ body {
   padding-top: 79px;
   padding-bottom: 32px;
 }
+@media (min-width: 768px) {
+  .values__item__title {
+    padding-top: 98px;
+  }
+}
 .values__number__wrapper {
   position: absolute;
   height: 96px;
   width: 96px;
   left: 50%;
-  bottom: 0;
   transform: translate(-50%, 50%);
+  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -357,6 +371,11 @@ body {
   flex-direction: column;
   gap: 16px;
 }
+@media (min-width: 768px) {
+  .faq__item__wrapper {
+    gap: 24px;
+  }
+}
 .faq__item__answer {
   display: none;
   max-width: 96%;
@@ -364,7 +383,12 @@ body {
 .faq .question__wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 20px;
+}
+@media (min-width: 768px) {
+  .faq .question__wrapper {
+    justify-content: space-between;
+  }
 }
 
 .rotate-faq-arrow {
@@ -400,6 +424,15 @@ body {
 .values,
 .faq {
     padding: 0 100px;
+  }
+}
+
+.about__wrapper {
+  margin-top: 72px;
+}
+@media (min-width: 768px) {
+  .about__wrapper {
+    margin-top: 144px;
   }
 }
 
@@ -987,14 +1020,13 @@ a {
   align-items: center;
   gap: 55px;
   text-align: center;
-  padding: 80px 70px;
   padding-bottom: 0;
 }
 @media (min-width: 768px) {
   .home__app .app__wrapper {
     text-align: left;
     gap: 47px;
-    padding: 122px 125px 0 102px;
+    padding-top: 122px;
   }
 }
 @media (min-width: 1024px) {
@@ -1003,12 +1035,6 @@ a {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 122px 0 0 102px;
-  }
-}
-@media (min-width: 1400px) {
-  .home__app .app__wrapper {
-    padding: 122px 0 0 165px;
   }
 }
 .home__app .app__image {
@@ -1022,8 +1048,8 @@ a {
 }
 @media (min-width: 768px) {
   .home__app .app__image {
-    width: 200px;
-    max-width: 262px;
+    width: 250px;
+    max-width: 250px;
     height: 96px;
   }
 }
@@ -1087,50 +1113,40 @@ a {
   }
 }
 .home__about {
-  margin: 127px 0;
+  margin-top: 127px;
 }
 @media (min-width: 768px) {
   .home__about {
-    margin: 145px 0;
+    margin-top: 145px;
   }
 }
 @media (min-width: 1024px) {
   .home__about {
-    margin: 200px 0;
-  }
-}
-.home__about .about__item .arrow--telemetry {
-  right: 0;
-  top: 150px;
-  width: 88%;
-}
-.home__about .about__item .arrow--telemetry img {
-  width: 100%;
-}
-@media (min-width: 768px) {
-  .home__about .about__item .arrow--telemetry {
-    top: 306px;
-    right: 0;
-    bottom: 0;
-  }
-}
-@media (min-width: 1024px) {
-  .home__about .about__item .arrow--telemetry {
-    top: initial;
-    width: 550px;
+    margin-top: 200px;
   }
 }
 .home__about .about__item .arrow--near-you {
   left: 0;
   top: 0;
 }
+@media (min-width: 768px) {
+  .home__about .about__item .arrow--near-you {
+    width: 450px;
+  }
+}
 .home__about .about__item .arrow--payments {
   right: 0;
-  top: 0;
+  width: 50%;
+  top: 40px;
 }
 @media (min-width: 768px) {
   .home__about .about__item .arrow--payments {
     top: 60px;
+  }
+}
+@media (min-width: 1400px) {
+  .home__about .about__item .arrow--payments {
+    width: 400px;
   }
 }
 
@@ -1153,8 +1169,19 @@ a {
   right: 0;
   width: 95%;
 }
+@media (min-width: 768px) {
+  .arrow--mobility {
+    top: 262px;
+    width: 1120px;
+  }
+}
 .arrow--urban-living {
   top: 0;
   left: 0;
   width: 95%;
+}
+@media (min-width: 768px) {
+  .arrow--urban-living {
+    width: 400px;
+  }
 }
