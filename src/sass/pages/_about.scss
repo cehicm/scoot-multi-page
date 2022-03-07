@@ -13,7 +13,18 @@
 			background-image: url("/src/images/desktop/about/about-header-desktop.svg");
 		}
 	}
+}
 
-	&__section {
+.arrow {
+	&--mobility {
+		top: 100px;
+		right: 0;
+		width: 95%;
+	}
+
+	&--urban-living {
+		top: 0;
+		left: 0;
+		width: 95%;
 	}
 }
