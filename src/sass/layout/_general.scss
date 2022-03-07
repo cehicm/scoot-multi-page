@@ -24,6 +24,14 @@
 	@include sc-breakpoint(768) {
 		padding: 0 100px;
 	}
+
+	@include sc-breakpoint(1024) {
+		padding: 0 55px;
+	}
+
+	@include sc-breakpoint(1400) {
+		padding: 0 165px;
+	}
 }
 
 .about,
