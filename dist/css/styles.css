@@ -506,7 +506,26 @@ body {
   }
 }
 .header__content--title-only {
+  position: relative;
   padding: 67px 0;
+}
+@media (min-width: 768px) {
+  .header__content--title-only {
+    padding: 72px 0 72px 100px;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 1024px) {
+  .header__content--title-only {
+    padding: 72px 0 72px 160px;
+    align-items: flex-start;
+  }
+}
+@media (min-width: 768px) {
+  .header__content--title-only .header__circles {
+    bottom: 33%;
+    top: auto;
+  }
 }
 .header__content--darken {
   opacity: 0.5;

@@ -31,7 +31,25 @@
 		}
 
 		&--title-only {
+			position: relative;
 			padding: 67px 0;
+
+			@include sc-breakpoint(768) {
+				padding: 72px 0 72px 100px;
+				align-items: flex-start;
+			}
+
+			@include sc-breakpoint(1024) {
+				padding: 72px 0 72px 160px;
+				align-items: flex-start;
+			}
+
+			.header__circles {
+				@include sc-breakpoint(768) {
+					bottom: 33%;
+					top: auto;
+				}
+			}
 		}
 
 		&--darken {
