@@ -2,19 +2,120 @@
 @import "../variables/breakpoints";
 
 .locations {
-	&__map {
-		position: relative;
-		margin-bottom: 80px;
-		background-image: url("/src/images/mobile/location/world-map-mobile.png");
-		background-repeat: no-repeat;
-		background-size: contain;
+	margin: 0 32px;
 
+	@include sc-breakpoint(768) {
+		margin: 140px 63px 0 63px;
+	}
+
+	&__map {
 		@include sc-breakpoint(768) {
-			background-image: url("/src/images/tablet/location/world-map-tablet.png");
+			position: relative;
+			max-width: 768px;
+			margin: 0 auto;
 		}
 
 		@include sc-breakpoint(1024) {
-			background-image: url("/src/images/desktop/location/world-map-desktop.png");
+			max-width: 1024px;
+		}
+
+		@include sc-breakpoint(1400) {
+			max-width: 1100px;
+		}
+	}
+
+	&__image {
+		img {
+			width: 100%;
+		}
+	}
+
+	&__city {
+		margin-top: 40px;
+		margin-bottom: 80px;
+	}
+
+	&__item {
+		padding: 22px 100px;
+		margin-bottom: 16px;
+		text-align: center;
+		background-color: colors.$light-yellow;
+		color: colors.$text-dark-gray;
+
+		@include sc-breakpoint(768) {
+			position: absolute;
+			padding: 11px 30px;
+			margin-bottom: 0;
+			background-color: colors.$yellow-gold;
+
+			&::after {
+				content: "";
+				position: absolute;
+				display: block;
+				width: 0px;
+				height: 0px;
+				left: 37%;
+				border-left: 20px solid transparent;
+				border-right: 20px solid transparent;
+				border-top: 20px solid colors.$yellow-gold;
+			}
+		}
+
+		&--ny {
+			@include sc-breakpoint(768) {
+				top: 34px;
+				left: 93px;
+			}
+
+			@include sc-breakpoint(1024) {
+				transform: translate(66px, 22px);
+			}
+		}
+
+		&--london {
+			@include sc-breakpoint(768) {
+				top: 6px;
+				left: 228px;
+			}
+
+			@include sc-breakpoint(1024) {
+				transform: translate(117px, 16px);
+			}
+		}
+
+		&--yokohama {
+			@include sc-breakpoint(768) {
+				right: 71px;
+				top: 43px;
+			}
+
+			@include sc-breakpoint(1024) {
+				transform: translate(-5px, 38px);
+			}
+		}
+
+		&--jakarta {
+			@include sc-breakpoint(768) {
+				top: 152px;
+				right: 126px;
+			}
+
+			@include sc-breakpoint(1024) {
+				transform: translate(-19px, 69px);
+			}
+		}
+	}
+
+	&__content {
+		text-align: center;
+
+		@include sc-breakpoint(768) {
+			padding: 0 37px;
+		}
+
+		&__text {
+			padding-top: 43px;
+			padding-bottom: 39px;
 		}
 	}
 }

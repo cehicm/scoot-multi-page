@@ -480,22 +480,119 @@ body {
   padding-bottom: 23px;
 }
 
-.locations__map {
-  position: relative;
-  margin-bottom: 80px;
-  background-image: url("/src/images/mobile/location/world-map-mobile.png");
-  background-repeat: no-repeat;
-  background-size: contain;
+.locations {
+  margin: 0 32px;
+}
+@media (min-width: 768px) {
+  .locations {
+    margin: 140px 63px 0 63px;
+  }
 }
 @media (min-width: 768px) {
   .locations__map {
-    background-image: url("/src/images/tablet/location/world-map-tablet.png");
+    position: relative;
+    max-width: 768px;
+    margin: 0 auto;
   }
 }
 @media (min-width: 1024px) {
   .locations__map {
-    background-image: url("/src/images/desktop/location/world-map-desktop.png");
+    max-width: 1024px;
   }
+}
+@media (min-width: 1400px) {
+  .locations__map {
+    max-width: 1100px;
+  }
+}
+.locations__image img {
+  width: 100%;
+}
+.locations__city {
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+.locations__item {
+  padding: 22px 100px;
+  margin-bottom: 16px;
+  text-align: center;
+  background-color: #fff4df;
+  color: #495567;
+}
+@media (min-width: 768px) {
+  .locations__item {
+    position: absolute;
+    padding: 11px 30px;
+    margin-bottom: 0;
+    background-color: #fcb72b;
+  }
+  .locations__item::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0px;
+    height: 0px;
+    left: 37%;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #fcb72b;
+  }
+}
+@media (min-width: 768px) {
+  .locations__item--ny {
+    top: 34px;
+    left: 93px;
+  }
+}
+@media (min-width: 1024px) {
+  .locations__item--ny {
+    transform: translate(66px, 22px);
+  }
+}
+@media (min-width: 768px) {
+  .locations__item--london {
+    top: 6px;
+    left: 228px;
+  }
+}
+@media (min-width: 1024px) {
+  .locations__item--london {
+    transform: translate(117px, 16px);
+  }
+}
+@media (min-width: 768px) {
+  .locations__item--yokohama {
+    right: 71px;
+    top: 43px;
+  }
+}
+@media (min-width: 1024px) {
+  .locations__item--yokohama {
+    transform: translate(-5px, 38px);
+  }
+}
+@media (min-width: 768px) {
+  .locations__item--jakarta {
+    top: 152px;
+    right: 126px;
+  }
+}
+@media (min-width: 1024px) {
+  .locations__item--jakarta {
+    transform: translate(-19px, 69px);
+  }
+}
+.locations__content {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .locations__content {
+    padding: 0 37px;
+  }
+}
+.locations__content__text {
+  padding-top: 43px;
+  padding-bottom: 39px;
 }
 
 .display-none {
@@ -515,8 +612,7 @@ body {
 .home__app,
 .values,
 .faq,
-.positions,
-.locations {
+.positions {
   padding: 0 32px;
 }
 @media (min-width: 768px) {
@@ -524,8 +620,7 @@ body {
 .home__app,
 .values,
 .faq,
-.positions,
-.locations {
+.positions {
     padding: 0 100px;
   }
 }
@@ -534,28 +629,24 @@ body {
 .home__app,
 .values,
 .faq,
-.positions,
-.locations {
+.positions {
     padding: 0 165px;
   }
 }
 
 .about,
-.careers,
-.locations {
+.careers {
   margin-top: 72px;
 }
 @media (min-width: 768px) {
   .about,
-.careers,
-.locations {
+.careers {
     margin-top: 144px;
   }
 }
 @media (min-width: 1024px) {
   .about,
-.careers,
-.locations {
+.careers {
     margin-top: 120px;
   }
 }
@@ -1001,7 +1092,8 @@ a {
 .about__item__title,
 .values__title,
 .faq__title,
-.footer__title {
+.footer__title,
+.locations__content__title {
   font-size: 32px;
   line-height: 32px;
   letter-spacing: -1.43px;
@@ -1010,7 +1102,8 @@ a {
   .about__item__title,
 .values__title,
 .faq__title,
-.footer__title {
+.footer__title,
+.locations__content__title {
     font-size: 48px;
     line-height: 48px;
     letter-spacing: -2.14px;
@@ -1024,7 +1117,8 @@ a {
 .app__item__text,
 .button--cta,
 .faq__item__answer,
-.positions__item__text {
+.positions__item__text,
+.locations__content__text {
   font-size: 15px;
   line-height: 25px;
   letter-spacing: 0px;
@@ -1142,6 +1236,12 @@ a {
     font-size: 24px;
     line-height: 28px;
   }
+}
+
+.city__title {
+  font-size: 13px;
+  line-height: 28px;
+  letter-spacing: -0.58px;
 }
 
 .home-header {
