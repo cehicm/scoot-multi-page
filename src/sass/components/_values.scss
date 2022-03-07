@@ -1,0 +1,49 @@
+@use "../variables/colors" as colors;
+@import "../variables/breakpoints";
+
+.values {
+	margin-top: 96px;
+	margin-bottom: 151px;
+	text-align: center;
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__image__wrapper {
+		position: relative;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 62px;
+
+		&__image > img {
+			border-radius: 50%;
+		}
+
+		&__title {
+			padding-top: 79px;
+			padding-bottom: 32px;
+		}
+	}
+
+	&__number__wrapper {
+		position: absolute;
+		height: 96px;
+		width: 96px;
+		left: 50%;
+		bottom: 0;
+		transform: translate(-50%, 50%);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		background-color: colors.$yellow-gold;
+	}
+}
