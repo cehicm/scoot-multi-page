@@ -34,12 +34,20 @@
 
 		@include sc-breakpoint(1024) {
 			flex-direction: row;
-			gap: 40px;
+			gap: 38px;
 		}
 	}
 
 	&__image__wrapper {
 		position: relative;
+	}
+
+	.values__image {
+		@include sc-breakpoint(1024) {
+			max-width: 240px;
+			border-radius: 50%;
+			overflow: hidden;
+		}
 	}
 
 	&__item {
@@ -49,6 +57,15 @@
 
 		&__image > img {
 			border-radius: 50%;
+
+			@include sc-breakpoint(1024) {
+				width: auto;
+				transition: transform 0.2s;
+
+				&:hover {
+					transform: scale(1.2);
+				}
+			}
 		}
 
 		&__title {

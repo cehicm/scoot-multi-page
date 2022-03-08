@@ -364,11 +364,18 @@ body {
 @media (min-width: 1024px) {
   .values__wrapper {
     flex-direction: row;
-    gap: 40px;
+    gap: 38px;
   }
 }
 .values__image__wrapper {
   position: relative;
+}
+@media (min-width: 1024px) {
+  .values .values__image {
+    max-width: 240px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
 }
 .values__item {
   display: flex;
@@ -377,6 +384,15 @@ body {
 }
 .values__item__image > img {
   border-radius: 50%;
+}
+@media (min-width: 1024px) {
+  .values__item__image > img {
+    width: auto;
+    transition: transform 0.2s;
+  }
+  .values__item__image > img:hover {
+    transform: scale(1.2);
+  }
 }
 .values__item__title {
   padding-top: 79px;
