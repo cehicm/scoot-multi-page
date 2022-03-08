@@ -29,6 +29,5 @@
 	$(".question__wrapper").on("click", function () {
 		$(this).next().slideToggle();
 		$(this).children("svg").toggleClass("rotate-faq-arrow");
-		// close if another one is open?
 	});
 })(jQuery);
