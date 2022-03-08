@@ -52,8 +52,8 @@
 				border-radius: 50%;
 
 				@include sc-breakpoint(768) {
-					width: 200px;
-					max-width: 200px;
+					width: 250px;
+					max-width: 250px;
 					height: 96px;
 				}
 
@@ -72,6 +72,7 @@
 				@include sc-breakpoint(768) {
 					flex-direction: row;
 					align-items: flex-start;
+					gap: 79px;
 				}
 
 				@include sc-breakpoint(1024) {
@@ -136,11 +137,11 @@
 
 					&--payments {
 						right: 0;
-						width: 50%;
 						top: 40px;
 
 						@include sc-breakpoint(768) {
 							top: 60px;
+							width: 540px;
 						}
 
 						@include sc-breakpoint(1400) {

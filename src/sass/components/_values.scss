@@ -9,11 +9,28 @@
 		margin-bottom: 120px;
 	}
 
+	&__title {
+		margin-bottom: 64px;
+
+		@include sc-breakpoint(768) {
+			margin-bottom: 111px;
+		}
+
+		@include sc-breakpoint(1024) {
+			margin-bottom: 109px;
+		}
+	}
+
 	&__wrapper {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		gap: 56px;
+
+		@include sc-breakpoint(768) {
+			gap: 62px;
+		}
 
 		@include sc-breakpoint(1024) {
 			flex-direction: row;
@@ -29,11 +46,6 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding-top: 62px;
-
-		@include sc-breakpoint(768) {
-			padding-top: 111px;
-		}
 
 		&__image > img {
 			border-radius: 50%;
@@ -49,6 +61,8 @@
 		}
 
 		&__text {
+			max-width: 500px;
+
 			@include sc-breakpoint(1024) {
 				max-width: 350px;
 			}

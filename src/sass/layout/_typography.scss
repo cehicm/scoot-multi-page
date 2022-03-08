@@ -6,17 +6,18 @@ h2,
 h3,
 h4,
 a,
-button,
-.button--apply {
+button {
 	font-family: "Space Mono";
 	font-weight: 700;
 	margin: 0;
+	color: colors.$text-dark-gray;
 }
 
 p {
 	margin: 0;
 	font-family: "Lexend Deca";
 	font-weight: 400;
+	color: colors.$text-light-gray;
 }
 
 ul {
@@ -27,6 +28,7 @@ ul {
 
 a {
 	text-decoration: none;
+	color: colors.$text-light-gray;
 }
 
 //Repeated
@@ -77,12 +79,11 @@ a {
 
 //Header
 .header {
-	color: colors.$white;
-
 	&__title {
 		font-size: 40px;
 		line-height: 40px;
 		letter-spacing: -1.78px;
+		color: colors.$white;
 
 		@include sc-breakpoint(768) {
 			font-size: 56px;
@@ -90,19 +91,18 @@ a {
 			letter-spacing: -2.5px;
 		}
 	}
+
+	&__text {
+		color: colors.$white;
+	}
 }
 
 //Navigation
 .nav__list__item > a {
 	letter-spacing: 0px;
-	color: colors.$light-gray;
 
 	&:hover {
 		color: colors.$yellow-gold;
-	}
-
-	@include sc-breakpoint(768) {
-		color: colors.$text-light-gray;
 	}
 }
 
@@ -129,8 +129,6 @@ a {
 	}
 
 	&__menu__item > a {
-		color: colors.$text-light-gray;
-
 		&:hover {
 			color: colors.$yellow-gold;
 		}
@@ -153,28 +151,10 @@ a {
 				letter-spacing: -1.07px;
 			}
 		}
-
-		&__text {
-			color: colors.$text-light-gray;
-		}
 	}
 }
 
 //Components
-.about__item {
-	&__title {
-		color: colors.$text-dark-gray;
-	}
-
-	&__text {
-		color: colors.$text-light-gray;
-	}
-}
-
-.values__item__text {
-	color: colors.$text-light-gray;
-}
-
 .faq {
 	color: colors.$text-dark-gray;
 
@@ -201,6 +181,8 @@ a {
 	letter-spacing: -0.58px;
 }
 
-.locations__content__text {
-	color: colors.$text-light-gray;
+.button--apply {
+	font-family: "Space Mono";
+	font-weight: 700;
+	margin: 0;
 }

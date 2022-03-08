@@ -13,6 +13,7 @@
 		align-items: center;
 		padding: 32px;
 		margin-bottom: 16px;
+		text-align: center;
 		background-color: colors.$white-gray;
 
 		@include sc-breakpoint(768) {
@@ -20,9 +21,19 @@
 			justify-content: space-between;
 		}
 
+		@include sc-breakpoint(1024) {
+			text-align: left;
+			padding: 37px 42px;
+		}
+
 		&__location {
 			padding-top: 17px;
 			padding-bottom: 23px;
+
+			@include sc-breakpoint(1024) {
+				padding-top: 13px;
+				padding-bottom: 5px;
+			}
 		}
 	}
 }
