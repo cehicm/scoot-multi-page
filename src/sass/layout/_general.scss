@@ -31,7 +31,8 @@
 }
 
 .about,
-.careers {
+.careers,
+.locations {
 	margin-top: 72px;
 
 	@include sc-breakpoint(768) {
