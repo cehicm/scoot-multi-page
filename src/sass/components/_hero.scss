@@ -1,0 +1,148 @@
+@use "../variables/colors" as colors;
+@import "../variables/breakpoints";
+
+.hero {
+	&__wrapper {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 120px;
+		padding-bottom: 120px;
+		text-align: center;
+		background-image: url("/src/images/mobile/home/mobile-hero.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+
+		@include sc-breakpoint(1024) {
+			text-align: left;
+			align-items: flex-start;
+			padding-left: 165px;
+			background-image: url("/src/images/tablet/home/tablet-hero.svg");
+		}
+
+		@include sc-breakpoint(1024) {
+			padding: 153px 165px;
+			background-image: url("/src/images/desktop/home/hero-desktop.svg");
+		}
+	}
+
+	&__title {
+		max-width: 500px;
+	}
+
+	&__text {
+		padding: 33px 0;
+		max-width: 550px;
+
+		@include sc-breakpoint(768) {
+			padding: 43px 0;
+		}
+
+		@include sc-breakpoint(1024) {
+			padding: 54px 0 54px 65px;
+			max-width: 346px;
+		}
+
+		@include sc-breakpoint(1080) {
+			padding: 54px 0 54px 96px;
+		}
+
+		@include sc-breakpoint(1280) {
+			max-width: 405px;
+		}
+	}
+
+	&__arrow {
+		position: absolute;
+
+		@include sc-breakpoint(1024) {
+			top: 55%;
+		}
+
+		&--full {
+			bottom: 20px;
+			left: 0;
+			animation: moveX 2s infinite;
+			animation-direction: alternate;
+
+			@keyframes moveX {
+				0% {
+					transform: translate(0, 0);
+				}
+				100% {
+					transform: translate(150px, 0);
+				}
+			}
+
+			@include sc-breakpoint(768) {
+				animation: unset;
+			}
+
+			@include sc-breakpoint(1024) {
+				right: 0;
+			}
+
+			@include sc-breakpoint(1200) {
+				right: auto;
+				left: 660px;
+			}
+
+			@include sc-breakpoint(1300) {
+				left: 700px;
+			}
+		}
+
+		&--line {
+			display: none;
+
+			@include sc-breakpoint(1024) {
+				display: block;
+			}
+		}
+	}
+
+	&__circles {
+		display: none;
+
+		@include sc-breakpoint(768) {
+			position: absolute;
+			display: flex;
+			gap: 15px;
+			right: 0;
+			bottom: 20px;
+		}
+
+		@include sc-breakpoint(1300) {
+			bottom: auto;
+			top: 65%;
+		}
+	}
+
+	.button--cta {
+		width: 180px;
+		margin-bottom: 60px;
+
+		@include sc-breakpoint(1024) {
+			// margin-left: 96px;
+		}
+	}
+
+	&--title-only {
+		position: relative;
+		padding: 67px 0;
+
+		@include sc-breakpoint(768) {
+			padding: 72px 0 72px 100px;
+			align-items: flex-start;
+		}
+
+		.header__circles {
+			@include sc-breakpoint(768) {
+				bottom: 33%;
+				top: auto;
+			}
+		}
+	}
+}

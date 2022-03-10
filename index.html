@@ -11,65 +11,69 @@
 
 	<body>
 		<header class="header home-header">
-			<nav class="nav">
-				<div class="nav__top">
-					<svg class="nav__menu__icon icon--open" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<g id="Group">
-							<rect id="Rectangle" width="19.6923" height="3.69231" fill="#FCB72B" />
-							<rect id="RectangleCopy" y="6.15381" width="19.6923" height="3.69231" fill="#FCB72B" />
-							<rect id="RectangleCopy2" y="12.3077" width="19.6923" height="3.69231" fill="#FCB72B" />
-						</g>
-					</svg>
-					<svg class="nav__menu__icon icon--close" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<g id="Group2">
-							<rect id="Rectangle_Copy" x="3.18945" y="0.7323" width="19.6923" height="3.69231" transform="rotate(45 3.18945 0.7323)" fill="#FCB72B" />
-							<rect id="Rectangle_Copy_2" x="0.578125" y="14.6569" width="19.6923" height="3.69231" transform="rotate(-45 0.578125 14.6569)" fill="#FCB72B" />
-						</g>
-					</svg>
-					<a class="logo nav__logo" href="#">
-						<img src="/src/images/scoot-logo.svg" alt="Scoot logo" />
-					</a>
-				</div>
-				<div class="nav__menu">
-					<ul class="nav__list">
-						<li class="nav__list__item">
-							<a href="/src/html/about.html">About</a>
-						</li>
-						<li class="nav__list__item">
-							<a href="/src/html/locations.html">Location</a>
-						</li>
-						<li class="nav__list__item">
-							<a href="/src/html/careers.html">Careers</a>
-						</li>
-					</ul>
-					<div class="nav__button">
-						<button class="button button--cta">Get Scootin</button>
+			<div class="">
+				<nav class="nav inner__wrapper">
+					<div class="nav__top">
+						<svg class="nav__menu__icon icon--open" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g id="Group">
+								<rect id="Rectangle" width="19.6923" height="3.69231" fill="#FCB72B" />
+								<rect id="RectangleCopy" y="6.15381" width="19.6923" height="3.69231" fill="#FCB72B" />
+								<rect id="RectangleCopy2" y="12.3077" width="19.6923" height="3.69231" fill="#FCB72B" />
+							</g>
+						</svg>
+						<svg class="nav__menu__icon icon--close" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g id="Group2">
+								<rect id="Rectangle_Copy" x="3.18945" y="0.7323" width="19.6923" height="3.69231" transform="rotate(45 3.18945 0.7323)" fill="#FCB72B" />
+								<rect id="Rectangle_Copy_2" x="0.578125" y="14.6569" width="19.6923" height="3.69231" transform="rotate(-45 0.578125 14.6569)" fill="#FCB72B" />
+							</g>
+						</svg>
+						<a class="logo nav__logo" href="#">
+							<img src="/src/images/scoot-logo.svg" alt="Scoot logo" />
+						</a>
 					</div>
-				</div>
-			</nav>
-			<div class="header__content">
-				<h1 class="header__title">Scooter sharing made simple</h1>
-				<p class="header__text">
+					<div class="nav__menu">
+						<ul class="nav__list">
+							<li class="nav__list__item">
+								<a href="/src/html/about.html">About</a>
+							</li>
+							<li class="nav__list__item">
+								<a href="/src/html/locations.html">Location</a>
+							</li>
+							<li class="nav__list__item">
+								<a href="/src/html/careers.html">Careers</a>
+							</li>
+						</ul>
+						<div class="nav__button">
+							<button class="button button--cta">Get Scootin</button>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<section class="hero">
+			<div class="hero__wrapper inner__wrapper">
+				<h1 class="hero__title">Scooter sharing made simple</h1>
+				<p class="hero__text">
 					Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re
 					away!
 				</p>
 				<button class="button button--cta">Get Scootin</button>
-			</div>
-			<picture class="header__arrow header__arrow--full">
-				<source srcset="/src/images/icons/header-arrow-desktop.svg" media="(min-width: 1024px)" />
-				<source class="header__arrow" srcset="/src/images/icons/header-arrow-tablet.svg" media="(min-width: 768px)" />
-				<source srcset="/src/images/icons/header-arrow.svg" media="(min-width: 320px)" />
-				<img alt="Arrow pointing right" src="/src/images/icons/header-arrow.svg" />
-			</picture>
 
-			<img src="/src/images/icons/header-yellow-line.svg" alt="Gold yellow line" class="header__arrow header__arrow--line" />
-
-			<div class="header__circles">
-				<img src="/src/images/icons/header-circle-empty.svg" alt="Circle with white border and transparent background" />
-				<img src="/src/images/icons/header-circle-empty.svg" alt="Circle with white border and transparent background" />
-				<img src="/src/images/icons/header-circle-full.svg" alt="White circle" />
+				<picture class="hero__arrow hero__arrow--full">
+					<source srcset="/src/images/icons/hero-arrow-desktop.svg" media="(min-width: 1024px)" />
+					<source srcset="/src/images/icons/hero-arrow-tablet.svg" media="(min-width: 768px)" />
+					<source srcset="/src/images/icons/hero-arrow.svg" media="(min-width: 320px)" />
+					<img alt="Arrow pointing right" src="/src/images/icons/hero-arrow.svg" />
+				</picture>
+				<img src="/src/images/icons/hero-yellow-line.svg" alt="Gold yellow line" class="hero__arrow hero__arrow--line" />
+				<div class="hero__circles">
+					<img src="/src/images/icons/hero-circle-empty.svg" alt="Circle with white border and transparent background" />
+					<img src="/src/images/icons/hero-circle-empty.svg" alt="Circle with white border and transparent background" />
+					<img src="/src/images/icons/hero-circle-full.svg" alt="White circle" />
+				</div>
 			</div>
-		</header>
+		</section>
 
 		<div class="home">
 			<section class="home__app">

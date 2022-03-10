@@ -48,7 +48,7 @@ a {
 	}
 }
 
-.header__text,
+.hero__text,
 .about__item__text,
 .footer__menu__item > a,
 .values__item__text,
@@ -78,7 +78,7 @@ a {
 }
 
 //Header
-.header {
+.hero {
 	&__title {
 		font-size: 40px;
 		line-height: 40px;
@@ -99,6 +99,7 @@ a {
 
 //Navigation
 .nav__list__item > a {
+	color: colors.$white;
 	letter-spacing: 0px;
 
 	&:hover {
