@@ -2,6 +2,7 @@
 @import "../variables/breakpoints";
 
 .values {
+	margin-top: 133px;
 	margin-bottom: 151px;
 	text-align: center;
 
@@ -21,23 +22,6 @@
 		}
 	}
 
-	&__wrapper {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		gap: 56px;
-
-		@include sc-breakpoint(768) {
-			gap: 62px;
-		}
-
-		@include sc-breakpoint(1024) {
-			flex-direction: row;
-			gap: 38px;
-		}
-	}
-
 	&__image__wrapper {
 		position: relative;
 	}
@@ -51,6 +35,23 @@
 	}
 
 	&__item {
+		&__wrapper {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 56px;
+
+			@include sc-breakpoint(768) {
+				gap: 62px;
+			}
+
+			@include sc-breakpoint(1024) {
+				flex-direction: row;
+				gap: 38px;
+			}
+		}
+
 		display: flex;
 		flex-direction: column;
 		align-items: center;

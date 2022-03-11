@@ -338,7 +338,7 @@ body {
   align-items: center;
   max-width: 350px;
 }
-@media (min-width: 768px) {
+@media (min-width: 425px) {
   .about__item__content {
     max-width: 580px;
   }
@@ -466,6 +466,7 @@ body {
 }
 
 .values {
+  margin-top: 133px;
   margin-bottom: 151px;
   text-align: center;
 }
@@ -487,24 +488,6 @@ body {
     margin-bottom: 109px;
   }
 }
-.values__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 56px;
-}
-@media (min-width: 768px) {
-  .values__wrapper {
-    gap: 62px;
-  }
-}
-@media (min-width: 1024px) {
-  .values__wrapper {
-    flex-direction: row;
-    gap: 38px;
-  }
-}
 .values__image__wrapper {
   position: relative;
 }
@@ -519,6 +502,24 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.values__item__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 56px;
+}
+@media (min-width: 768px) {
+  .values__item__wrapper {
+    gap: 62px;
+  }
+}
+@media (min-width: 1024px) {
+  .values__item__wrapper {
+    flex-direction: row;
+    gap: 38px;
+  }
 }
 .values__item__image > img {
   border-radius: 50%;
@@ -611,6 +612,7 @@ body {
 .faq__item__wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 16px;
 }
 @media (min-width: 768px) {
@@ -989,20 +991,23 @@ section {
     width: 107px;
   }
 }
-.nav__menu {
+.nav__wrapper {
   display: flex;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .nav__wrapper {
+    height: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #333a44;
+  }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .nav__menu {
     transform: translateX(-120%);
     position: fixed;
-    height: 100%;
-    min-height: 100vh;
     width: 69%;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 0 35px;
-    background-color: #333a44;
     transition: transform 0.3s ease;
     z-index: 3;
   }
@@ -1043,7 +1048,7 @@ section {
 }
 
 .show-menu {
-  transform: translateX(-12%);
+  transform: translateX(-9%);
 }
 
 .footer {

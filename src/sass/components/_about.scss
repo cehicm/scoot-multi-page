@@ -48,7 +48,7 @@
 			align-items: center;
 			max-width: 350px;
 
-			@include sc-breakpoint(768) {
+			@include sc-breakpoint(425) {
 				max-width: 580px;
 			}
 
