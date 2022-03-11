@@ -2,29 +2,40 @@
 @import "../variables/breakpoints";
 
 .hero {
+	position: relative;
+	background-image: url("/src/images/mobile/home/mobile-hero.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	@include sc-breakpoint(1024) {
+		background-image: url("/src/images/tablet/home/tablet-hero.svg");
+	}
+
+	@include sc-breakpoint(1024) {
+		background-image: url("/src/images/desktop/home/hero-desktop.svg");
+	}
+
 	&--home {
-		position: relative;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
+		display: grid;
+		justify-content: center;
 		padding-top: 120px;
 		padding-bottom: 120px;
 		text-align: center;
-		background-image: url("/src/images/mobile/home/mobile-hero.svg");
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
+
+		& > * {
+			grid-column: 1/-1;
+		}
 
 		@include sc-breakpoint(1024) {
+			grid-template-columns: repeat(12, minmax(0, 1fr));
 			text-align: left;
 			align-items: flex-start;
 			padding-left: 165px;
-			background-image: url("/src/images/tablet/home/tablet-hero.svg");
 		}
 
 		@include sc-breakpoint(1024) {
 			padding: 153px 165px;
-			background-image: url("/src/images/desktop/home/hero-desktop.svg");
 		}
 	}
 
@@ -52,6 +63,11 @@
 
 	&__title {
 		max-width: 500px;
+
+		@include sc-breakpoint(1024) {
+			grid-column: 1/-1;
+			grid-row: 1;
+		}
 	}
 
 	&__text {
@@ -63,12 +79,14 @@
 		}
 
 		@include sc-breakpoint(1024) {
-			padding: 54px 0 54px 65px;
+			padding: 54px 0;
 			max-width: 346px;
+			grid-column: 2/-1;
+			grid-row: 2;
 		}
 
 		@include sc-breakpoint(1080) {
-			padding: 54px 0 54px 96px;
+			// padding: 54px 0 54px 96px;
 		}
 
 		@include sc-breakpoint(1280) {
@@ -76,11 +94,22 @@
 		}
 	}
 
+	.button--cta {
+		width: 180px;
+		margin-bottom: 60px;
+		justify-self: center;
+
+		@include sc-breakpoint(1024) {
+			grid-column: 2/-1;
+			grid-row: 3;
+		}
+	}
+
 	&__arrow {
 		position: absolute;
 
 		@include sc-breakpoint(1024) {
-			top: 55%;
+			top: 48%;
 		}
 
 		&--full {
@@ -103,6 +132,7 @@
 			}
 
 			@include sc-breakpoint(1024) {
+				left: auto;
 				right: 0;
 			}
 
@@ -121,6 +151,7 @@
 
 			@include sc-breakpoint(1024) {
 				display: block;
+				left: 0;
 			}
 		}
 	}
@@ -138,16 +169,7 @@
 
 		@include sc-breakpoint(1300) {
 			bottom: auto;
-			top: 65%;
-		}
-	}
-
-	.button--cta {
-		width: 180px;
-		margin-bottom: 60px;
-
-		@include sc-breakpoint(1024) {
-			// margin-left: 96px;
+			top: 58%;
 		}
 	}
 }
