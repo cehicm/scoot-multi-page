@@ -4,8 +4,8 @@
 		$(".nav__menu").toggleClass("show-menu");
 		$(this).addClass("display-none");
 		$(".icon--close").addClass("display-block");
-		$(".hero .inner__wrapper").addClass("content--darken");
-		$(".header").addClass("header--darken");
+		$(".header__content").addClass("header--darken");
+		$(".header").next().addClass("content--darken");
 
 		//Prevent  scroll when menu is open
 		$("body").addClass("body-menu-open");
@@ -16,8 +16,8 @@
 		$(".nav__menu").toggleClass("show-menu");
 		$(".icon--open").removeClass("display-none");
 		$(this).removeClass("display-block");
-		$(".hero .inner__wrapper").removeClass("content--darken");
-		$(".header").removeClass("header--darken");
+		$(".header__content").removeClass("header--darken");
+		$(".header").next().removeClass("content--darken");
 
 		//Allow user to scroll when menu is closed again
 		$("body").removeClass("body-menu-open");
