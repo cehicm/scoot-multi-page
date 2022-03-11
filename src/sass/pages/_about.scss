@@ -2,7 +2,7 @@
 @import "../variables/breakpoints";
 
 .about {
-	&-header {
+	&-hero {
 		background-image: url("/src/images/mobile/about/about-header.svg");
 
 		@include sc-breakpoint(768) {

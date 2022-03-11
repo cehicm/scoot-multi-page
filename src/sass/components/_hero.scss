@@ -2,7 +2,7 @@
 @import "../variables/breakpoints";
 
 .hero {
-	&__wrapper {
+	&--home {
 		position: relative;
 		display: flex;
 		flex-direction: column;
@@ -25,6 +25,28 @@
 		@include sc-breakpoint(1024) {
 			padding: 153px 165px;
 			background-image: url("/src/images/desktop/home/hero-desktop.svg");
+		}
+	}
+
+	&--title-only {
+		position: relative;
+		text-align: center;
+		padding-top: 67px;
+		padding-bottom: 67px;
+		margin-bottom: 72px;
+
+		@include sc-breakpoint(768) {
+			padding-top: 72px;
+			padding-bottom: 72px;
+			margin-bottom: 150px;
+			align-items: flex-start;
+		}
+
+		.header__circles {
+			@include sc-breakpoint(768) {
+				bottom: 33%;
+				top: auto;
+			}
 		}
 	}
 
@@ -72,7 +94,7 @@
 					transform: translate(0, 0);
 				}
 				100% {
-					transform: translate(150px, 0);
+					transform: translate(120px, 0);
 				}
 			}
 
@@ -126,23 +148,6 @@
 
 		@include sc-breakpoint(1024) {
 			// margin-left: 96px;
-		}
-	}
-
-	&--title-only {
-		position: relative;
-		padding: 67px 0;
-
-		@include sc-breakpoint(768) {
-			padding: 72px 0 72px 100px;
-			align-items: flex-start;
-		}
-
-		.header__circles {
-			@include sc-breakpoint(768) {
-				bottom: 33%;
-				top: auto;
-			}
 		}
 	}
 }
