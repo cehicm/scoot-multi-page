@@ -9,14 +9,28 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 20px 38px 20px 41px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		gap: 60px;
 
 		@include sc-breakpoint(1024) {
-			padding: 20px 95px;
+			padding-top: 34px;
+			padding-bottom: 34px;
 		}
 
 		@include sc-breakpoint(1280) {
-			padding: 20px 165px;
+			// padding: 20px 165px;
+		}
+	}
+
+	&__wrapper {
+		@include sc-breakpoint(768) {
+			justify-content: space-between;
+			padding: 0;
+		}
+
+		@include sc-breakpoint(1024) {
+			justify-content: space-around;
 		}
 	}
 
@@ -63,9 +77,8 @@
 		}
 
 		@include sc-breakpoint(768) {
-			justify-content: space-between;
 			width: 100%;
-			margin-left: 58px;
+			// margin-left: 58px;
 		}
 
 		&__icon {
@@ -100,5 +113,9 @@
 }
 
 .show-menu {
-	transform: translateX(-9%);
+	transform: translateX(-11%);
+
+	@include sc-breakpoint(640) {
+		transform: translateX(-7%);
+	}
 }

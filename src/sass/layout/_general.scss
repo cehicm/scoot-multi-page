@@ -20,7 +20,7 @@
 
 .content--darken {
 	// opacity: 0.9;
-	height: 100vh;
+	// height: 100vh;
 	background-color: colors.$light-black;
 	background-blend-mode: hard-light;
 
@@ -79,5 +79,10 @@ section {
 	@include sc-breakpoint(768) {
 		padding-left: 40px;
 		padding-right: 40px;
+	}
+
+	@include sc-breakpoint(1024) {
+		padding-left: 169px;
+		padding-right: 169px;
 	}
 }

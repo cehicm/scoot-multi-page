@@ -5,7 +5,7 @@
 		$(this).addClass("display-none");
 		$(".icon--close").addClass("display-block");
 		$(".header__content").addClass("header--darken");
-		$(".header").next().addClass("content--darken");
+		$(".header").nextAll().addClass("content--darken");
 
 		//Prevent  scroll when menu is open
 		$("body").addClass("body-menu-open");
@@ -17,7 +17,7 @@
 		$(".icon--open").removeClass("display-none");
 		$(this).removeClass("display-block");
 		$(".header__content").removeClass("header--darken");
-		$(".header").next().removeClass("content--darken");
+		$(".header").nextAll().removeClass("content--darken");
 
 		//Allow user to scroll when menu is closed again
 		$("body").removeClass("body-menu-open");
