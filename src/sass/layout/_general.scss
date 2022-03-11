@@ -77,6 +77,7 @@ section {
 	padding-right: 32px;
 
 	@include sc-breakpoint(768) {
-		padding: 0 40px;
+		padding-left: 40px;
+		padding-right: 40px;
 	}
 }

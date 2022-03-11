@@ -156,9 +156,12 @@
 			margin-top: 45px;
 			max-width: 315px;
 
+			@include sc-breakpoint(425) {
+				max-width: none;
+			}
+
 			@include sc-breakpoint(768) {
 				margin-top: 45px;
-				max-width: unset;
 			}
 
 			@include sc-breakpoint(1024) {
