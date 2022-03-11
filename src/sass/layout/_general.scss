@@ -19,50 +19,15 @@
 }
 
 .content--darken {
-	// opacity: 0.9;
-	// height: 100vh;
+	height: 100vh;
 	background-color: colors.$light-black;
 	background-blend-mode: hard-light;
-
-	& > * {
-		mix-blend-mode: soft-light;
-	}
 }
 
 .text--darken {
 	opacity: 0.9;
 	mix-blend-mode: soft-light;
 }
-
-// .about__item,
-// .home__app,
-// .values,
-// .faq,
-// .positions {
-// 	padding: 0 32px;
-
-// 	@include sc-breakpoint(768) {
-// 		padding: 0 100px;
-// 	}
-
-// 	@include sc-breakpoint(1400) {
-// 		padding: 0 165px;
-// 	}
-// }
-
-// .about,
-// .careers,
-// .locations {
-// 	margin-top: 72px;
-
-// 	@include sc-breakpoint(768) {
-// 		margin-top: 144px;
-// 	}
-
-// 	@include sc-breakpoint(1024) {
-// 		margin-top: 120px;
-// 	}
-// }
 
 .header,
 section {

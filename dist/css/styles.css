@@ -927,11 +927,9 @@ body {
 }
 
 .content--darken {
+  height: 100vh;
   background-color: #333a44;
   background-blend-mode: hard-light;
-}
-.content--darken > * {
-  mix-blend-mode: soft-light;
 }
 
 .text--darken {
