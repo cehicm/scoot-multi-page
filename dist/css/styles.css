@@ -587,26 +587,6 @@ body {
   }
 }
 
-.locations {
-  margin: 0 32px;
-}
-@media (min-width: 640px) {
-  .locations {
-    margin: 0 63px;
-  }
-}
-@media (min-width: 768px) {
-  .locations {
-    margin-top: 140px;
-  }
-}
-@media (min-width: 1400px) {
-  .locations {
-    max-width: 1440px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
 .locations-hero {
   background-image: url("/src/images/mobile/careers/careers-hero-mobile.svg");
 }

@@ -2,22 +2,6 @@
 @import "../variables/breakpoints";
 
 .locations {
-	margin: 0 32px;
-
-	@include sc-breakpoint(640) {
-		margin: 0 63px;
-	}
-
-	@include sc-breakpoint(768) {
-		margin-top: 140px;
-	}
-
-	@include sc-breakpoint(1400) {
-		max-width: 1440px;
-		margin-right: auto;
-		margin-left: auto;
-	}
-
 	&-hero {
 		background-image: url("/src/images/mobile/careers/careers-hero-mobile.svg");
 
