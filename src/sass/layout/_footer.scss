@@ -2,10 +2,10 @@
 @import "../variables/breakpoints";
 
 .footer {
-	text-align: center;
-	background-color: colors.$light-black;
-	overflow: hidden;
 	margin-top: 127px;
+	text-align: center;
+	background-color: colors.$text-dark-gray;
+	overflow: hidden;
 
 	@include sc-breakpoint(768) {
 		margin-top: 145px;
@@ -23,7 +23,37 @@
 		}
 	}
 
-	&__top,
+	.footer-bg__img {
+		position: absolute;
+		bottom: 0;
+
+		&--left {
+			left: -200px;
+		}
+
+		&--full {
+			right: 0;
+
+			@include sc-breakpoint(1024) {
+				right: -30px;
+			}
+		}
+
+		&--middle {
+			display: none;
+
+			@include sc-breakpoint(600) {
+				display: block;
+				left: 24%;
+			}
+
+			@include sc-breakpoint(1024) {
+				left: 35%;
+			}
+		}
+	}
+
+	&__top__wrapper,
 	&__top__buttons {
 		display: flex;
 		align-content: center;
@@ -31,30 +61,26 @@
 	}
 	&__top {
 		position: relative;
-		flex-direction: column;
-		gap: 44px;
-		padding-top: 93px;
-		padding-bottom: 93px;
-		background-color: colors.$text-dark-gray;
 
-		@include sc-breakpoint(425) {
-			padding: 93px 32px;
-		}
+		&__wrapper {
+			flex-direction: column;
+			gap: 44px;
+			padding-top: 93px;
+			padding-bottom: 93px;
 
-		@include sc-breakpoint(768) {
-			padding: 62px 179px;
-		}
+			@include sc-breakpoint(768) {
+				padding-top: 62px;
+				padding-bottom: 62px;
+			}
 
-		@include sc-breakpoint(1024) {
-			flex-direction: row;
-			justify-content: space-between;
-			align-items: baseline;
-			text-align: left;
-			padding: 120px 105px 108px 105px;
-		}
-
-		@include sc-breakpoint(1200) {
-			padding: 120px 165px 108px 165px;
+			@include sc-breakpoint(1024) {
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: baseline;
+				text-align: left;
+				padding-top: 120px;
+				padding-bottom: 120px;
+			}
 		}
 
 		&__buttons {
@@ -63,46 +89,22 @@
 			text-align: left;
 			z-index: 2;
 		}
-
-		.footer-bg__img {
-			position: absolute;
-			bottom: 0;
-
-			&--border {
-				left: -200px;
-			}
-
-			&--full {
-				right: -30px;
-
-				@include sc-breakpoint(768) {
-				}
-			}
-
-			&--middle {
-				display: none;
-
-				@include sc-breakpoint(600) {
-					display: block;
-				}
-
-				@include sc-breakpoint(1024) {
-					left: 35%;
-				}
-			}
-		}
 	}
 
 	&__bottom {
-		@include sc-breakpoint(768) {
-			display: flex;
-			align-items: center;
-			justify-content: space-around;
-		}
+		background-color: colors.$light-black;
 
-		@include sc-breakpoint(1024) {
-			justify-content: space-between;
-			padding: 36px 165px;
+		&__wrapper {
+			@include sc-breakpoint(768) {
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+			}
+
+			@include sc-breakpoint(1024) {
+				justify-content: space-between;
+				// padding: 36px 165px;
+			}
 		}
 
 		&__menu,
@@ -119,6 +121,11 @@
 		&__menu {
 			@include sc-breakpoint(768) {
 				gap: 58px;
+			}
+
+			@include sc-breakpoint(1024) {
+				// padding-top: 36px;
+				// padding-bottom: 36px;
 			}
 		}
 
