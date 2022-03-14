@@ -52,9 +52,15 @@
 			margin-bottom: 150px;
 			align-items: flex-start;
 			text-align: left;
+		}
 
-			.hero__title {
+		.hero__title {
+			@include sc-breakpoint(768) {
 				padding-left: 68px;
+			}
+
+			@include sc-breakpoint(1024) {
+				padding-left: 0;
 			}
 		}
 
@@ -94,10 +100,6 @@
 			max-width: 346px;
 			grid-column: 2/-1;
 			grid-row: 2;
-		}
-
-		@include sc-breakpoint(1080) {
-			// padding: 54px 0 54px 96px;
 		}
 
 		@include sc-breakpoint(1280) {
@@ -175,12 +177,6 @@
 			display: flex;
 			gap: 15px;
 			right: 0;
-			top: -4px;
-		}
-
-		@include sc-breakpoint(1300) {
-			bottom: auto;
-			top: 58%;
 		}
 	}
 }

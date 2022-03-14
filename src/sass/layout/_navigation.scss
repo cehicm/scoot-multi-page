@@ -17,20 +17,12 @@
 			padding-top: 34px;
 			padding-bottom: 34px;
 		}
-
-		@include sc-breakpoint(1280) {
-			// padding: 20px 165px;
-		}
 	}
 
 	&__wrapper {
 		@include sc-breakpoint(768) {
 			justify-content: space-between;
 			padding: 0;
-		}
-
-		@include sc-breakpoint(1024) {
-			justify-content: space-around;
 		}
 	}
 

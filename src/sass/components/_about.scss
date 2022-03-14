@@ -19,27 +19,30 @@
 
 	&__item {
 		position: relative;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		text-align: center;
 
-		@include sc-breakpoint(1024) {
-			flex-direction: row-reverse;
-			text-align: left;
-			justify-content: space-between;
-			gap: 40px;
-		}
+		&__wrapper {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
 
-		@include sc-breakpoint(1080) {
-			gap: 120px;
-		}
+			@include sc-breakpoint(1024) {
+				flex-direction: row-reverse;
+				text-align: left;
+				justify-content: space-between;
+				gap: 40px;
+			}
 
-		@include sc-breakpoint(1400) {
-			max-width: 1400px;
-			margin: 0 auto;
-			gap: 220px;
+			@include sc-breakpoint(1080) {
+				gap: 120px;
+			}
+
+			@include sc-breakpoint(1400) {
+				max-width: 1400px;
+				margin: 0 auto;
+				gap: 220px;
+			}
 		}
 
 		&__content {
@@ -59,7 +62,7 @@
 			}
 		}
 
-		&--flip {
+		.item--flip {
 			@include sc-breakpoint(1024) {
 				flex-direction: row;
 			}
@@ -174,9 +177,9 @@
 				max-width: 440px;
 			}
 
-			@include sc-breakpoint(1080) {
-				width: 580px;
-			}
+			// @include sc-breakpoint(1080) {
+			// 	width: 580px;
+			// }
 		}
 
 		.button--learn-more {
