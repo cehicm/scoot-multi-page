@@ -192,6 +192,10 @@ body {
     padding-bottom: 72px;
     margin-bottom: 150px;
     align-items: flex-start;
+    text-align: left;
+  }
+  .hero--title-only .hero__title {
+    padding-left: 68px;
   }
 }
 @media (min-width: 768px) {
@@ -199,6 +203,9 @@ body {
     bottom: 33%;
     top: auto;
   }
+}
+.hero__wrapper--text-only {
+  position: relative;
 }
 .hero__title {
   max-width: 500px;
@@ -304,7 +311,7 @@ body {
     display: flex;
     gap: 15px;
     right: 0;
-    bottom: 20px;
+    top: -4px;
   }
 }
 @media (min-width: 1300px) {

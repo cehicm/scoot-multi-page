@@ -51,6 +51,11 @@
 			padding-bottom: 72px;
 			margin-bottom: 150px;
 			align-items: flex-start;
+			text-align: left;
+
+			.hero__title {
+				padding-left: 68px;
+			}
 		}
 
 		.header__circles {
@@ -58,6 +63,12 @@
 				bottom: 33%;
 				top: auto;
 			}
+		}
+	}
+
+	&__wrapper {
+		&--text-only {
+			position: relative;
 		}
 	}
 
@@ -164,7 +175,7 @@
 			display: flex;
 			gap: 15px;
 			right: 0;
-			bottom: 20px;
+			top: -4px;
 		}
 
 		@include sc-breakpoint(1300) {
