@@ -1,0 +1,16 @@
+@use "../variables/colors" as colors;
+@import "../variables/breakpoints";
+
+.careers {
+	&-hero {
+		background-image: url("/src/images/mobile/careers/careers-hero-mobile.svg");
+
+		@include sc-breakpoint(1024) {
+			background-image: url("/src/images/tablet/careers/careers-hero-tablet.svg");
+		}
+
+		@include sc-breakpoint(1024) {
+			background-image: url("/src/images/desktop/careers/careers-hero-desktop.svg");
+		}
+	}
+}
