@@ -47,6 +47,11 @@ section {
 	}
 
 	@include sc-breakpoint(1024) {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+
+	@include sc-breakpoint(1080) {
 		padding-left: 169px;
 		padding-right: 169px;
 	}
